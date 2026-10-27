@@ -1,7 +1,7 @@
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
-import { RevealWords } from "../components/RevealWords";
-import { SlantedBand } from "../components/SlantedBand";
-import { colors, EASE_OUT, fontFamily } from "../theme";
+import { RevealWords } from "../../components/RevealWords";
+import { SlantedBand } from "../../components/SlantedBand";
+import { colors, EASE_OUT, fontFamily } from "../../theme";
 
 export const Opening: React.FC = () => {
   const frame = useCurrentFrame();

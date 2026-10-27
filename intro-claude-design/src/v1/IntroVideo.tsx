@@ -7,7 +7,7 @@ import { Hook } from "./scenes/Hook";
 import { Opening } from "./scenes/Opening";
 import { Outro } from "./scenes/Outro";
 import { Title } from "./scenes/Title";
-import { EASE_IN_OUT } from "./theme";
+import { EASE_IN_OUT } from "../theme";
 
 const transition = linearTiming({
   durationInFrames: 15,

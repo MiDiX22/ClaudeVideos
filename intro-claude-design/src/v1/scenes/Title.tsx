@@ -1,5 +1,5 @@
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
-import { colors, EASE_OUT, fontFamily } from "../theme";
+import { colors, EASE_OUT, fontFamily } from "../../theme";
 
 const LETTERS = "Claude Design".split("");
 

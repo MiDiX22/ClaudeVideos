@@ -24,3 +24,18 @@ export const colors = {
 // Expo-out curve used for every entrance.
 export const EASE_OUT = [0.16, 1, 0.3, 1] as const;
 export const EASE_IN_OUT = [0.65, 0, 0.35, 1] as const;
+
+// Launcher tile colours from the BirdWatch module groups.
+export const moduleColors = [
+  "#f2951c",
+  "#0f4475",
+  "#d32f2e",
+  "#28839b",
+  "#52416c",
+  "#5382af",
+  "#0b6e6a",
+  "#707173",
+  "#e9751f",
+];
+
+export const monoFamily = '"DejaVu Sans Mono", Menlo, Consolas, monospace';

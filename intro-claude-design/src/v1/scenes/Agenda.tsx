@@ -1,6 +1,6 @@
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
-import { RevealWords } from "../components/RevealWords";
-import { colors, EASE_OUT, fontFamily } from "../theme";
+import { RevealWords } from "../../components/RevealWords";
+import { colors, EASE_OUT, fontFamily } from "../../theme";
 
 const ITEMS = [
   "Sistemes de disseny de marca",

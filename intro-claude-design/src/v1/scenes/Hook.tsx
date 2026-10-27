@@ -1,6 +1,6 @@
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
-import { RevealWords } from "../components/RevealWords";
-import { colors, EASE_OUT, fontFamily } from "../theme";
+import { RevealWords } from "../../components/RevealWords";
+import { colors, EASE_OUT, fontFamily } from "../../theme";
 
 export const Hook: React.FC = () => {
   const frame = useCurrentFrame();

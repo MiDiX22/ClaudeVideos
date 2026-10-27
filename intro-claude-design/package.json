@@ -29,7 +29,7 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "render": "remotion render IntroClaudeDesign out/intro-claude-design.mp4"
+    "render": "remotion render IntroClaudeDesign60s out/intro-claude-design-60s.mp4"
   },
   "allowScripts": {
     "esbuild": false
