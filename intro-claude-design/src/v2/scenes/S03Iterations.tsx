@@ -6,14 +6,14 @@ import { Wireframe } from "../../components/Wireframe";
 import { colors, fontFamily } from "../../theme";
 import { RING_SPEED, RING_START } from "./S02Loop";
 
-const RAPID = [158, 166, 173, 179, 184, 189, 193, 197, 201];
+const RAPID = [236, 244, 250, 255, 259, 263, 266, 269, 272];
 
 // Each change of the button is a new version of the design.
 const VERSIONS = [
-  { at: 35, x: 1, s: 1 },
-  { at: 70, x: 1, s: 1.5 },
-  { at: 105, x: 1, s: 2.3 },
-  { at: 140, x: 1, s: 1 },
+  { at: 50, x: 1, s: 1 },
+  { at: 115, x: 1, s: 1.5 },
+  { at: 155, x: 1, s: 2.3 },
+  { at: 220, x: 1, s: 1 },
   ...RAPID.map((at, i) => ({
     at,
     x: random(`x-${i}`),
@@ -21,9 +21,9 @@ const VERSIONS = [
   })),
 ];
 
-export const S03_DURATION = 210;
+export const S03_DURATION = 279;
 export const ringRotationS3 = (frame: number) =>
-  (150 - RING_START) * RING_SPEED + RING_SPEED * frame + 0.03 * frame * frame;
+  (147 - RING_START) * RING_SPEED + RING_SPEED * frame + 0.03 * frame * frame;
 
 export const buttonAt = (frame: number) => {
   let x = 0;
@@ -80,11 +80,11 @@ export const S03Iterations: React.FC = () => {
       <WordSwap
         end={S03_DURATION}
         items={[
-          { at: 0, lines: ["Botó a", "l'esquerra."] },
-          { at: 35, lines: ["No, a la", "dreta."] },
-          { at: 70, lines: ["Més gran."] },
-          { at: 105, lines: ["Massa", "gran."] },
-          { at: 140, lines: ["Tornem a la", "versió 3…"], color: colors.orange },
+          { at: 9, lines: ["Botó a", "l'esquerra."] },
+          { at: 50, lines: ["No, a la", "dreta."] },
+          { at: 115, lines: ["Més gran."] },
+          { at: 155, lines: ["Massa", "gran."] },
+          { at: 205, lines: ["Tornem a la", "versió 3…"], color: colors.orange },
         ]}
         style={{
           left: 90,

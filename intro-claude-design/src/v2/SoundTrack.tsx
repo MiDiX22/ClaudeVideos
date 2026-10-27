@@ -1,48 +1,62 @@
 import { Audio } from "@remotion/media";
-import { Sequence, staticFile } from "remotion";
+import { interpolate, Sequence, staticFile } from "remotion";
 
 type Sfx = { at: number; file: string; volume: number };
 
-// Frames are global; scene starts: 0, 150, 300, 510, 630, 750, 870, 1020, 1200, 1350, 1530.
+// The voice-over ends after "…de confiança"; the take continues with an extra "Gràcies".
+const VOICE_END = 1712;
+
+// Frames are global; scene starts: 0, 228, 375, 654, 759, 852, 939, 1092, 1224, 1410, 1560.
 const SFX: Sfx[] = [
   // 01 Som R+D
-  { at: 112, file: "whip", volume: 0.3 },
+  { at: 190, file: "whip", volume: 0.2 },
   // 02 El bucle
-  { at: 150, file: "whoosh", volume: 0.3 },
-  { at: 245, file: "whoosh", volume: 0.4 },
+  { at: 246, file: "whoosh", volume: 0.2 },
+  { at: 328, file: "whoosh", volume: 0.3 },
   // 03 Iteracions: every new version of the button
-  ...[335, 370, 405, 440].map((at) => ({ at, file: "mouse-click", volume: 0.6 })),
-  ...[458, 466, 473, 479, 484, 489, 493, 497, 501].map((at) => ({ at, file: "switch", volume: 0.35 })),
+  ...[425, 490, 530, 595].map((at) => ({ at, file: "mouse-click", volume: 0.45 })),
+  ...[611, 619, 625, 630, 634, 638, 641, 644, 647].map((at) => ({ at, file: "switch", volume: 0.25 })),
   // 04 Fitxer final
-  { at: 510, file: "whip", volume: 0.4 },
-  { at: 578, file: "ding", volume: 0.4 },
+  { at: 654, file: "whip", volume: 0.3 },
+  { at: 728, file: "ding", volume: 0.3 },
   // 05 Sortir del bucle
-  { at: 686, file: "whoosh", volume: 0.5 },
+  { at: 819, file: "whoosh", volume: 0.35 },
   // 06 Claude Design
-  { at: 750, file: "whoosh", volume: 0.5 },
-  { at: 830, file: "mouse-click", volume: 0.8 },
+  { at: 852, file: "whoosh", volume: 0.35 },
+  { at: 924, file: "mouse-click", volume: 0.6 },
   // 07 Marca
-  ...[892, 920, 946, 974].map((at) => ({ at, file: "page-turn", volume: 0.35 })),
+  ...[967, 1002, 1026, 1055].map((at) => ({ at, file: "page-turn", volume: 0.25 })),
   // 08 Variants
-  { at: 1056, file: "whoosh", volume: 0.35 },
-  { at: 1106, file: "whoosh", volume: 0.35 },
-  { at: 1170, file: "shutter-modern", volume: 0.4 },
+  { at: 1098, file: "whoosh", volume: 0.25 },
+  { at: 1112, file: "whoosh", volume: 0.25 },
+  { at: 1197, file: "shutter-modern", volume: 0.3 },
   // 09 Prototip, presentació, codi
-  { at: 1200, file: "whoosh", volume: 0.3 },
-  { at: 1240, file: "mouse-click", volume: 0.8 },
-  { at: 1258, file: "page-turn", volume: 0.4 },
-  { at: 1300, file: "whip", volume: 0.4 },
+  { at: 1234, file: "whoosh", volume: 0.2 },
+  { at: 1306, file: "mouse-click", volume: 0.6 },
+  { at: 1332, file: "page-turn", volume: 0.3 },
+  { at: 1374, file: "whip", volume: 0.3 },
   // 10 Menys voltes
-  { at: 1356, file: "whoosh", volume: 0.45 },
+  { at: 1420, file: "whoosh", volume: 0.3 },
   // 11 Tancament
-  { at: 1530, file: "whoosh", volume: 0.4 },
-  { at: 1630, file: "ding", volume: 0.35 },
+  { at: 1560, file: "whoosh", volume: 0.3 },
+  { at: 1692, file: "ding", volume: 0.3 },
 ];
 
-// Sound effects from remotion.media. Music goes here once it is chosen.
+// Voice-over plus sound effects from remotion.media. Music goes here once it is chosen.
 export const SoundTrack: React.FC = () => {
   return (
     <>
+      <Sequence name="Locució" durationInFrames={VOICE_END} layout="none">
+        <Audio
+          src={staticFile("voice/locucio.wav")}
+          volume={(f) =>
+            interpolate(f, [VOICE_END - 12, VOICE_END], [1, 0], {
+              extrapolateLeft: "clamp",
+              extrapolateRight: "clamp",
+            })
+          }
+        />
+      </Sequence>
       {SFX.map((sfx, i) => (
         <Sequence key={i} from={sfx.at} durationInFrames={90} name={`SFX ${sfx.file}`} layout="none">
           <Audio src={staticFile(`sfx/${sfx.file}.wav`)} volume={sfx.volume} />

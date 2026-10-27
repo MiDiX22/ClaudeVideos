@@ -45,7 +45,7 @@ export const S11Outro: React.FC = () => {
               style={{
                 display: "inline-block",
                 whiteSpace: "pre",
-                translate: `0px ${120 * (1 - prog(frame, 12 + i * 2, 24, easeOut))}%`,
+                translate: `0px ${120 * (1 - prog(frame, 10 + i * 2, 24, easeOut))}%`,
               }}
             >
               {letter}
@@ -54,7 +54,7 @@ export const S11Outro: React.FC = () => {
         </div>
         <RevealWords
           words={"el teu dissenyador gràfic de confiança".split(" ").map((text) => ({ text }))}
-          delay={40}
+          delay={67}
           stagger={3}
           style={{ color: colors.white, fontSize: 60, fontWeight: 400, letterSpacing: "-0.01em" }}
         />
@@ -65,14 +65,14 @@ export const S11Outro: React.FC = () => {
             backgroundColor: colors.orange,
             marginTop: 56,
             marginBottom: 40,
-            scale: `${prog(frame, 70, 20)} 1`,
+            scale: `${prog(frame, 100, 18)} 1`,
             transformOrigin: "left center",
           }}
         />
         <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
           <RevealWords
             words={[{ text: "Miriam" }, { text: "Gertrudix" }]}
-            delay={80}
+            delay={110}
             stagger={4}
             style={{ color: colors.white, fontSize: 52, fontWeight: 700 }}
           />
@@ -84,8 +84,8 @@ export const S11Outro: React.FC = () => {
               fontSize: 32,
               fontWeight: 600,
               padding: "8px 30px",
-              opacity: prog(frame, 96, 8),
-              scale: String(lerp(0.6, 1, prog(frame, 96, 16, overshoot))),
+              opacity: prog(frame, 126, 8),
+              scale: String(lerp(0.6, 1, prog(frame, 126, 16, overshoot))),
             }}
           >
             Properament
@@ -99,8 +99,8 @@ export const S11Outro: React.FC = () => {
           right: 140,
           top: 120,
           width: 360,
-          opacity: prog(frame, 100, 16),
-          translate: `0px ${20 * (1 - prog(frame, 100, 24))}px`,
+          opacity: prog(frame, 130, 16),
+          translate: `0px ${20 * (1 - prog(frame, 130, 24))}px`,
         }}
       />
     </AbsoluteFill>

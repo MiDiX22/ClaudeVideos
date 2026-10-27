@@ -67,10 +67,10 @@ const PARKING = parse([
 // Frames match the voice-over: "Som R+D. Fem visió artificial, LPRs, Spots… aparcaments sencers."
 const KEYS = [
   { at: 0, shape: SCATTER },
-  { at: 34, shape: EYE },
-  { at: 62, shape: PLATE },
-  { at: 88, shape: SPOT },
-  { at: 112, shape: PARKING },
+  { at: 88, shape: EYE },
+  { at: 129, shape: PLATE },
+  { at: 156, shape: SPOT },
+  { at: 190, shape: PARKING },
 ];
 
 const Pixel: React.FC<{ x: number; y: number }> = ({ x, y }) => {
@@ -123,7 +123,7 @@ export const S01PixelIntro: React.FC = () => {
           top: (1080 - GRID_H) / 2 + 30,
           width: GRID_W,
           height: GRID_H,
-          scale: String(lerp(1, 0.86, prog(frame, 112, 38, easeInOut))),
+          scale: String(lerp(1, 0.86, prog(frame, 190, 38, easeInOut))),
         }}
       >
         {Array.from({ length: ROWS }, (_, y) =>
@@ -131,13 +131,13 @@ export const S01PixelIntro: React.FC = () => {
         )}
       </div>
       <WordSwap
-        end={150}
+        end={228}
         items={[
-          { at: 0, lines: ["Som R+D."] },
-          { at: 34, lines: ["Visió", "artificial"] },
-          { at: 62, lines: ["LPR"] },
-          { at: 88, lines: ["Spot"] },
-          { at: 112, lines: ["Aparcaments", "sencers."], color: colors.orange },
+          { at: 30, lines: ["Som R+D."] },
+          { at: 86, lines: ["Visió", "artificial"] },
+          { at: 127, lines: ["LPR"] },
+          { at: 154, lines: ["Spot"] },
+          { at: 188, lines: ["Aparcaments", "sencers."], color: colors.orange },
         ]}
         style={{
           left: 1000,

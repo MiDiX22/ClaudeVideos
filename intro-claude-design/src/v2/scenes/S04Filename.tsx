@@ -22,12 +22,12 @@ export const S04Filename: React.FC = () => {
       easing: Easing.out(Easing.quad),
     });
   const typed = Math.floor(
-    interpolate(frame, [14, 58], [0, FILENAME.length], {
+    interpolate(frame, [6, 44], [0, FILENAME.length], {
       extrapolateLeft: "clamp",
       extrapolateRight: "clamp",
     }),
   );
-  const caretOn = Math.floor(frame / 8) % 2 === 0 || (frame > 14 && frame < 58);
+  const caretOn = Math.floor(frame / 8) % 2 === 0 || (frame > 6 && frame < 44);
 
   return (
     <AbsoluteFill style={{ backgroundColor: colors.ink, fontFamily }}>
@@ -60,7 +60,7 @@ export const S04Filename: React.FC = () => {
           justifyContent: "center",
           alignItems: "center",
           gap: 28,
-          opacity: prog(frame, 10, 8),
+          opacity: prog(frame, 4, 8),
         }}
       >
         <div
@@ -79,7 +79,7 @@ export const S04Filename: React.FC = () => {
       <div style={{ position: "absolute", top: 860, width: "100%" }}>
         <RevealWords
           words={[{ text: "Està" }, { text: "bé?", color: colors.orange }]}
-          delay={68}
+          delay={72}
           stagger={5}
           style={{ justifyContent: "center", color: colors.white, fontSize: 72, fontWeight: 800 }}
         />

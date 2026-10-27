@@ -22,13 +22,13 @@ const PencilIcon: React.FC<{ color: string }> = ({ color }) => (
 export const S06Title: React.FC = () => {
   const frame = useCurrentFrame();
   const flood = prog(frame, 0, 18, easeInOut);
-  const reveal = prog(frame, 14, 20, easeInOut);
-  const spark = prog(frame, 24, 26, overshoot);
-  const word = prog(frame, 34, 22);
-  const pill = prog(frame, 52, 18, overshoot);
-  const move = prog(frame, 62, 18, easeInOut);
-  const press = prog(frame, 80, 3) * (1 - prog(frame, 84, 4));
-  const active = prog(frame, 82, 8);
+  const reveal = prog(frame, 8, 18, easeInOut);
+  const spark = prog(frame, 41, 22, overshoot);
+  const word = prog(frame, 46, 16);
+  const pill = prog(frame, 54, 14, overshoot);
+  const move = prog(frame, 58, 14, easeInOut);
+  const press = prog(frame, 72, 3) * (1 - prog(frame, 76, 4));
+  const active = prog(frame, 74, 6);
 
   return (
     <AbsoluteFill style={{ backgroundColor: colors.ink, fontFamily, overflow: "hidden" }}>
@@ -62,8 +62,8 @@ export const S06Title: React.FC = () => {
               fontWeight: 700,
               letterSpacing: "0.3em",
               marginBottom: 40,
-              opacity: prog(frame, 20, 14),
-              translate: `0px ${20 * (1 - prog(frame, 20, 20))}px`,
+              opacity: prog(frame, 8, 14),
+              translate: `0px ${20 * (1 - prog(frame, 8, 20))}px`,
             }}
           >
             US PRESENTO
@@ -97,7 +97,7 @@ export const S06Title: React.FC = () => {
                 fontSize: 64,
                 fontWeight: 600,
                 scale: String(pill * (1 - 0.06 * press)),
-                opacity: prog(frame, 52, 6),
+                opacity: prog(frame, 54, 6),
               }}
             >
               <PencilIcon color={active > 0.5 ? CLAUDE_CORAL : CLAUDE_INK} />
@@ -114,7 +114,7 @@ export const S06Title: React.FC = () => {
             left: lerp(1700, PILL.x, move) - 6,
             top: lerp(1000, PILL.y, move) - 3,
             scale: String(1 - 0.15 * press),
-            opacity: prog(frame, 60, 6) * (1 - prog(frame, 104, 10)),
+            opacity: prog(frame, 56, 6) * (1 - prog(frame, 80, 6)),
             overflow: "visible",
           }}
         >

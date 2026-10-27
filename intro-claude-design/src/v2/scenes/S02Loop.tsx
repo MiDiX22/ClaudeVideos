@@ -5,13 +5,13 @@ import { RevealWords } from "../../components/RevealWords";
 import { Wireframe } from "../../components/Wireframe";
 import { colors, fontFamily } from "../../theme";
 
-export const RING_START = 95;
+export const RING_START = 100;
 export const RING_SPEED = 3;
 
 // "Però quan toca dissenyar una pantalla… comença el bucle."
 export const S02Loop: React.FC = () => {
   const frame = useCurrentFrame();
-  const textOut = prog(frame, 60, 16, easeInOut);
+  const textOut = prog(frame, 78, 14, easeInOut);
 
   return (
     <AbsoluteFill style={{ backgroundColor: colors.ink, fontFamily }}>
@@ -25,19 +25,19 @@ export const S02Loop: React.FC = () => {
       >
         <RevealWords
           words={[{ text: "Però" }, { text: "quan" }, { text: "toca" }, { text: "dissenyar" }]}
-          delay={2}
-          stagger={4}
+          delay={18}
+          stagger={5}
           style={{ justifyContent: "center", color: colors.white, fontSize: 104, fontWeight: 800, letterSpacing: "-0.03em" }}
         />
         <RevealWords
           words={[{ text: "una" }, { text: "pantalla…", color: colors.orange }]}
-          delay={18}
+          delay={50}
           stagger={5}
           style={{ justifyContent: "center", color: colors.white, fontSize: 104, fontWeight: 800, letterSpacing: "-0.03em" }}
         />
       </AbsoluteFill>
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
-        <Wireframe draw={prog(frame, 66, 40, easeInOut)} buttonX={0} buttonScale={1} width={675} />
+        <Wireframe draw={prog(frame, 80, 34, easeInOut)} buttonX={0} buttonScale={1} width={675} />
       </AbsoluteFill>
       <LoopRing
         cx={960}

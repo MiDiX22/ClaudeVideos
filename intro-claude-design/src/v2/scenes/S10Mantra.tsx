@@ -6,7 +6,7 @@ import { colors, fontFamily } from "../../theme";
 // "Menys voltes. Més criteri. I més temps per al que sabem fer."
 export const S10Mantra: React.FC = () => {
   const frame = useCurrentFrame();
-  const spin = interpolate(frame, [6, 44], [-720, 0], {
+  const spin = interpolate(frame, [10, 40], [-720, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
     easing: overshoot,
@@ -23,7 +23,7 @@ export const S10Mantra: React.FC = () => {
           stroke="#3a3a39"
           strokeWidth={60}
           strokeDasharray="60 40"
-          transform={`rotate(${interpolate(frame, [0, 50], [0, 540], {
+          transform={`rotate(${interpolate(frame, [0, 44], [0, 540], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
             easing: Easing.out(Easing.cubic),
@@ -32,20 +32,20 @@ export const S10Mantra: React.FC = () => {
       </svg>
       <div style={{ position: "absolute", left: 160, top: 190, color: colors.white, fontSize: 130, fontWeight: 800, letterSpacing: "-0.04em", lineHeight: 1.15 }}>
         <div style={{ display: "flex", gap: "0.25em" }}>
-          <RevealWords words={[{ text: "Menys" }]} delay={0} />
+          <RevealWords words={[{ text: "Menys" }]} delay={8} />
           <span
             style={{
               display: "inline-block",
               color: colors.orange,
               rotate: `${spin}deg`,
-              opacity: prog(frame, 6, 6),
+              opacity: prog(frame, 10, 6),
             }}
           >
             voltes.
           </span>
         </div>
         <div style={{ position: "relative", display: "inline-block" }}>
-          <RevealWords words={[{ text: "Més" }, { text: "criteri." }]} delay={52} stagger={6} />
+          <RevealWords words={[{ text: "Més" }, { text: "criteri." }]} delay={43} stagger={6} />
           <div
             style={{
               position: "absolute",
@@ -54,7 +54,7 @@ export const S10Mantra: React.FC = () => {
               bottom: 6,
               height: 14,
               backgroundColor: colors.orange,
-              scale: `${prog(frame, 72, 20)} 1`,
+              scale: `${prog(frame, 58, 18)} 1`,
               transformOrigin: "left center",
             }}
           />
@@ -72,7 +72,7 @@ export const S10Mantra: React.FC = () => {
             { text: "sabem", color: colors.orange },
             { text: "fer.", color: colors.orange },
           ]}
-          delay={104}
+          delay={81}
           stagger={4}
           style={{ color: colors.white, fontSize: 84, fontWeight: 700, letterSpacing: "-0.02em" }}
         />

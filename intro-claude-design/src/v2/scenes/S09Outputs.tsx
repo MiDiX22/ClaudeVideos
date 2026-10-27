@@ -10,9 +10,9 @@ const CY = 570;
 const PIN = { x: 381, y: 269 };
 
 const STAGES = [
-  { at: 18, label: "Prototip" },
-  { at: 56, label: "Presentació" },
-  { at: 100, label: "Codi" },
+  { at: 72, label: "Prototip" },
+  { at: 108, label: "Presentació" },
+  { at: 150, label: "Codi" },
 ];
 
 type Token = [string, string];
@@ -71,7 +71,7 @@ const Cursor: React.FC<{ x: number; y: number; press: number; opacity: number }>
 
 const CodePanel: React.FC = () => {
   const frame = useCurrentFrame();
-  let remaining = Math.floor(TOTAL_CHARS * prog(frame, 116, 32, (t) => t));
+  let remaining = Math.floor(TOTAL_CHARS * prog(frame, 162, 22, (t) => t));
 
   return (
     <div style={{ width: 1400, height: 720, backgroundColor: "#1e1e1d", boxShadow: "0 30px 80px rgba(0,0,0,0.45)" }}>
@@ -103,10 +103,10 @@ const CodePanel: React.FC = () => {
 // "…i quan una t'agrada, la tens en prototip, en presentació o directament en codi."
 export const S09Outputs: React.FC = () => {
   const frame = useCurrentFrame();
-  const zoom = prog(frame, 0, 20, easeInOut);
-  const slide = prog(frame, 58, 24, easeInOut);
-  const flipOut = prog(frame, 100, 10, easeIn);
-  const flipIn = prog(frame, 110, 14, easeOut);
+  const zoom = prog(frame, 8, 20, easeInOut);
+  const slide = prog(frame, 108, 22, easeInOut);
+  const flipOut = prog(frame, 150, 8, easeIn);
+  const flipIn = prog(frame, 158, 12, easeOut);
 
   const scale = lerp(lerp(chosenRect.s, SCALE, zoom), 0.8, slide);
   const cx = lerp(lerp(chosenRect.x, 960, zoom), 960 + 330, slide);
@@ -114,10 +114,10 @@ export const S09Outputs: React.FC = () => {
 
   const pinX = 960 - (SCREEN_W * SCALE) / 2 + PIN.x * SCALE;
   const pinY = CY - (SCREEN_H * SCALE) / 2 + PIN.y * SCALE;
-  const move = prog(frame, 20, 20, easeInOut);
-  const press = prog(frame, 40, 3) * (1 - prog(frame, 44, 4));
-  const ripple = prog(frame, 40, 16);
-  const panel = prog(frame, 44, 16);
+  const move = prog(frame, 58, 20, easeInOut);
+  const press = prog(frame, 80, 3) * (1 - prog(frame, 84, 4));
+  const ripple = prog(frame, 80, 16);
+  const panel = prog(frame, 84, 16);
 
   return (
     <AbsoluteFill style={{ backgroundColor: colors.ink, fontFamily, perspective: 2400 }}>
@@ -204,7 +204,7 @@ export const S09Outputs: React.FC = () => {
           x={lerp(1500, pinX, move)}
           y={lerp(980, pinY, move)}
           press={press}
-          opacity={prog(frame, 18, 6) * (1 - prog(frame, 54, 8))}
+          opacity={prog(frame, 56, 6) * (1 - prog(frame, 100, 8))}
         />
       </AbsoluteFill>
 

@@ -84,15 +84,15 @@ export const S07Brand: React.FC = () => {
               { text: "nostra" },
               { text: "marca", color: colors.orange },
             ]}
-            delay={10}
+            delay={7}
             stagger={3}
             style={{ color: colors.ink, fontSize: 92, fontWeight: 800, letterSpacing: "-0.03em" }}
           />
         </div>
-        <Card index={0} at={22} label="LOGO" background={colors.surface}>
+        <Card index={0} at={28} label="LOGO" background={colors.surface}>
           <Img src={staticFile("quercus-logo-grey.png")} style={{ width: 290 }} />
         </Card>
-        <Card index={1} at={50} label="COLORS" background={colors.white}>
+        <Card index={1} at={63} label="COLORS" background={colors.white}>
           <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "100%" }}>
             {SWATCHES.map((color, i) => (
               <div
@@ -100,14 +100,14 @@ export const S07Brand: React.FC = () => {
                 style={{
                   flex: 1,
                   backgroundColor: color,
-                  scale: `${prog(frame, 56 + i * 4, 18)} 1`,
+                  scale: `${prog(frame, 69 + i * 4, 18)} 1`,
                   transformOrigin: "left center",
                 }}
               />
             ))}
           </div>
         </Card>
-        <Card index={2} at={76} label="TIPOGRAFIA" background={colors.ink}>
+        <Card index={2} at={87} label="TIPOGRAFIA" background={colors.ink}>
           <div style={{ color: colors.white, fontSize: 190, fontWeight: 800, lineHeight: 1 }}>
             A<span style={{ color: colors.orange, fontWeight: 400 }}>a</span>
           </div>
@@ -115,7 +115,7 @@ export const S07Brand: React.FC = () => {
             Open Sans
           </div>
         </Card>
-        <Card index={3} at={104} label="COMPONENTS" background={colors.surface}>
+        <Card index={3} at={116} label="COMPONENTS" background={colors.surface}>
           <div
             style={{
               backgroundColor: colors.orange,

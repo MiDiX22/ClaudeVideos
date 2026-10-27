@@ -27,15 +27,15 @@ const PHASE2 = (i: number) => gridRect(i, 2, 2, 0.6, 30);
 const PHASE3 = (i: number) => gridRect(i, 5, 2, 0.33, 22);
 export const chosenRect = PHASE3(CHOSEN);
 
-const PHASE2_AT = 36;
-const PHASE3_AT = 86;
+const PHASE2_AT = 6;
+const PHASE3_AT = 20;
 
 // "…prova deu variants en el temps que nosaltres en fèiem una…"
 export const S08Variants: React.FC = () => {
   const frame = useCurrentFrame();
-  const t2 = prog(frame, PHASE2_AT, 30, easeInOut);
-  const t3 = prog(frame, PHASE3_AT, 34, easeInOut);
-  const pick = prog(frame, 150, 14);
+  const t2 = prog(frame, PHASE2_AT, 14, easeInOut);
+  const t3 = prog(frame, PHASE3_AT, 18, easeInOut);
+  const pick = prog(frame, 105, 12);
   const count = frame < PHASE2_AT + 8 ? 1 : frame < PHASE3_AT + 8 ? 4 : 10;
   const lastChange = count === 1 ? -100 : count === 4 ? PHASE2_AT + 8 : PHASE3_AT + 8;
   const pop = 1 + 0.3 * (1 - prog(frame, lastChange, 10));
@@ -109,7 +109,7 @@ export const S08Variants: React.FC = () => {
       <div style={{ position: "absolute", right: 120, top: 120 }}>
         <RevealWords
           words={[{ text: "…en" }, { text: "el" }, { text: "temps" }, { text: "d'una." , color: colors.orange }]}
-          delay={112}
+          delay={57}
           stagger={4}
           style={{ color: colors.white, fontSize: 56, fontWeight: 700 }}
         />
