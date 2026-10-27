@@ -55,6 +55,4 @@ Note that for some entities a company license is needed. [Read the terms here](h
 
 ## Audio
 
-- `public/music/music-bed.mp3`: music synthesised from scratch by `audio-src/synth.py` (free to use). Regenerate with `python3 audio-src/synth.py public` (needs numpy and scipy), then convert the WAV to MP3 with ffmpeg.
-- `public/sfx/*.mp3`: CC0 sound effects by Kenney, taken from the `soundcn` package.
-- `public/sfx/whoosh-*.wav`, `boom.wav`: synthesised by `audio-src/synth.py`.
+Sound effects in `public/sfx/` come from https://remotion.media (Remotion's sound effect library).
