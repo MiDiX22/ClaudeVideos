@@ -2,6 +2,7 @@ import { AbsoluteFill, Img, staticFile, useCurrentFrame } from "remotion";
 import { easeInOut, lerp, overshoot, prog } from "../../anim";
 import { RevealWords } from "../../components/RevealWords";
 import { colors, fontFamily } from "../../theme";
+import { CLAUDE_IVORY } from "./S06Title";
 
 const CARD_W = 360;
 const CARD_H = 420;
@@ -67,7 +68,7 @@ export const S07Brand: React.FC = () => {
   const reveal = prog(frame, 0, 20, easeInOut);
 
   return (
-    <AbsoluteFill style={{ backgroundColor: colors.orange, fontFamily }}>
+    <AbsoluteFill style={{ backgroundColor: CLAUDE_IVORY, fontFamily }}>
       <AbsoluteFill
         style={{
           backgroundColor: colors.white,
