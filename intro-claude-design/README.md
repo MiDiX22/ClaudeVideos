@@ -56,3 +56,5 @@ Note that for some entities a company license is needed. [Read the terms here](h
 ## Audio
 
 Sound effects in `public/sfx/` come from https://remotion.media (Remotion's sound effect library).
+- `public/music/mixkit-its-love-834.mp3`: "It's Love" from Mixkit (free under the Mixkit License).
+- `public/voice/locucio.wav`: voice-over by Miriam Gertrudix, cleaned and levelled with ffmpeg.

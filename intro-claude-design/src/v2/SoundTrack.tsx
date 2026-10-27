@@ -42,10 +42,32 @@ const SFX: Sfx[] = [
   { at: 1692, file: "ding", volume: 0.3 },
 ];
 
-// Voice-over plus sound effects from remotion.media. Music goes here once it is chosen.
+// "It's Love" by Mixkit (Mixkit License). Its drop at 39.29 s lands on the title cut (frame 852).
+const MUSIC_TRIM = 327;
+const DROP = 852;
+
+const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
+
+// The voice runs almost without pause from 1.3 s to 56.6 s, so the music sits low under it
+// and only opens up before the first word and after the last one.
+const musicVolume = (f: number) => {
+  const underVoice = f < DROP ? 0.2 : 0.1;
+  const intro = interpolate(f, [30, 42], [0.4, underVoice], clamp);
+  const outro = interpolate(f, [1700, 1716], [underVoice, 0.4], clamp);
+  const fade = interpolate(f, [1755, 1799], [1, 0], clamp);
+  return (f < 42 ? intro : f > 1700 ? outro : underVoice) * fade;
+};
+
+// Voice-over, music and sound effects from remotion.media.
 export const SoundTrack: React.FC = () => {
   return (
     <>
+      <Audio
+        name="Música"
+        src={staticFile("music/mixkit-its-love-834.mp3")}
+        trimBefore={MUSIC_TRIM}
+        volume={musicVolume}
+      />
       <Sequence name="Locució" durationInFrames={VOICE_END} layout="none">
         <Audio
           src={staticFile("voice/locucio.wav")}
