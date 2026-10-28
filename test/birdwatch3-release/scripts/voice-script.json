@@ -1,0 +1,13 @@
+[
+  { "id": "01-intro", "text": "Arriba Birdwatch tres." },
+  { "id": "02-versions", "text": "Dues versions. La tres punt zero, en alfa, al setembre. I la tres punt zero punt u, en beta, a l'octubre." },
+  { "id": "03-docker", "text": "Birdwatch tres funciona amb Docker. S'instal·la a la carpeta opt quercus, pots limitar la memòria RAM que fa servir, i els pàrquings petits tenen un servei WebDAV opcional." },
+  { "id": "04-web", "text": "La web es renova. Una interfície més neta, i la informació del sistema s'obre més ràpid i ara inclou el manteniment." },
+  { "id": "05-settings", "text": "Els paràmetres se separen en dos: dinàmics, que s'apliquen a l'instant, i estàtics, que s'apliquen després de reiniciar." },
+  { "id": "06-security", "text": "Més seguretat. Importa els teus certificats TLS, protegeix el sistema amb un dongle USB, i restaura les còpies de seguretat des de l'assistent d'inici." },
+  { "id": "07-scindoor", "text": "SC Indoor passa a l'API cinc punt u i treballa amb el docker SC Indoor AI. Birdwatch pot gestionar el DNS i el DHCP, i amb una sola ubicació reconeix les matrícules de tota la zona." },
+  { "id": "08-displays", "text": "Les pantalles de nova generació ja són compatibles amb les A u d'Ampron, i hi ha noves eines de diagnosi." },
+  { "id": "09-fixes", "text": "En total, quaranta-set canvis. Setze errors corregits, com els tokens d'accés que apareixien a la URL, o el contenidor que es reiniciava sense parar." },
+  { "id": "10-removed", "text": "I diem adéu a SmartREC, a les vistes SQL i a la llicència IRW. Find your car tornarà, redissenyat, en una propera versió." },
+  { "id": "11-outro", "text": "Birdwatch tres. Més net, més segur i més fàcil de mantenir." }
+]

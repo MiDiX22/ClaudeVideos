@@ -1,0 +1,1219 @@
+[
+ {
+  "id": "01-intro",
+  "file": "voice/01-intro.mp3",
+  "duration": 2.616,
+  "words": [
+   {
+    "word": "Arriba",
+    "start": 0.099,
+    "end": 0.667
+   },
+   {
+    "word": "Birdwatch",
+    "start": 0.667,
+    "end": 1.383
+   },
+   {
+    "word": "tres",
+    "start": 1.383,
+    "end": 1.86
+   }
+  ]
+ },
+ {
+  "id": "02-versions",
+  "file": "voice/02-versions.mp3",
+  "duration": 11.16,
+  "words": [
+   {
+    "word": "Dues",
+    "start": 0.099,
+    "end": 0.599
+   },
+   {
+    "word": "versions",
+    "start": 0.599,
+    "end": 1.36
+   },
+   {
+    "word": "La",
+    "start": 2.117,
+    "end": 2.333
+   },
+   {
+    "word": "tres",
+    "start": 2.333,
+    "end": 2.651
+   },
+   {
+    "word": "punt",
+    "start": 2.651,
+    "end": 2.935
+   },
+   {
+    "word": "zero",
+    "start": 2.935,
+    "end": 3.447
+   },
+   {
+    "word": "en",
+    "start": 3.822,
+    "end": 3.969
+   },
+   {
+    "word": "alfa",
+    "start": 3.969,
+    "end": 4.526
+   },
+   {
+    "word": "al",
+    "start": 4.628,
+    "end": 4.765
+   },
+   {
+    "word": "setembre",
+    "start": 4.765,
+    "end": 5.412
+   },
+   {
+    "word": "I la",
+    "start": 6.174,
+    "end": 6.753
+   },
+   {
+    "word": "tres",
+    "start": 6.753,
+    "end": 7.049
+   },
+   {
+    "word": "punt",
+    "start": 7.049,
+    "end": 7.333
+   },
+   {
+    "word": "zero",
+    "start": 7.333,
+    "end": 7.662
+   },
+   {
+    "word": "punt",
+    "start": 7.662,
+    "end": 8.083
+   },
+   {
+    "word": "u",
+    "start": 8.083,
+    "end": 8.481
+   },
+   {
+    "word": "en",
+    "start": 8.878,
+    "end": 9.083
+   },
+   {
+    "word": "beta",
+    "start": 9.083,
+    "end": 9.583
+   },
+   {
+    "word": "a",
+    "start": 9.674,
+    "end": 9.731
+   },
+   {
+    "word": "l'octubre",
+    "start": 9.731,
+    "end": 10.367
+   }
+  ]
+ },
+ {
+  "id": "03-docker",
+  "file": "voice/03-docker.mp3",
+  "duration": 13.032,
+  "words": [
+   {
+    "word": "Birdwatch",
+    "start": 0.099,
+    "end": 0.826
+   },
+   {
+    "word": "tres",
+    "start": 0.826,
+    "end": 1.144
+   },
+   {
+    "word": "funciona",
+    "start": 1.144,
+    "end": 1.872
+   },
+   {
+    "word": "amb",
+    "start": 1.872,
+    "end": 2.065
+   },
+   {
+    "word": "Docker",
+    "start": 2.065,
+    "end": 2.462
+   },
+   {
+    "word": "S'instal·la",
+    "start": 3.231,
+    "end": 3.958
+   },
+   {
+    "word": "a",
+    "start": 3.958,
+    "end": 3.992
+   },
+   {
+    "word": "la",
+    "start": 3.992,
+    "end": 4.106
+   },
+   {
+    "word": "carpeta",
+    "start": 4.106,
+    "end": 4.719
+   },
+   {
+    "word": "opt",
+    "start": 4.719,
+    "end": 4.969
+   },
+   {
+    "word": "quercus",
+    "start": 4.969,
+    "end": 5.606
+   },
+   {
+    "word": "pots",
+    "start": 5.708,
+    "end": 5.958
+   },
+   {
+    "word": "limitar",
+    "start": 5.958,
+    "end": 6.39
+   },
+   {
+    "word": "la",
+    "start": 6.39,
+    "end": 6.492
+   },
+   {
+    "word": "memòria",
+    "start": 6.492,
+    "end": 6.935
+   },
+   {
+    "word": "RAM",
+    "start": 6.935,
+    "end": 7.219
+   },
+   {
+    "word": "que",
+    "start": 7.219,
+    "end": 7.367
+   },
+   {
+    "word": "fa",
+    "start": 7.367,
+    "end": 7.537
+   },
+   {
+    "word": "servir",
+    "start": 7.537,
+    "end": 8.094
+   },
+   {
+    "word": "i",
+    "start": 8.481,
+    "end": 8.56
+   },
+   {
+    "word": "els",
+    "start": 8.56,
+    "end": 8.697
+   },
+   {
+    "word": "pàrquings",
+    "start": 8.697,
+    "end": 9.117
+   },
+   {
+    "word": "petits",
+    "start": 9.117,
+    "end": 9.583
+   },
+   {
+    "word": "tenen",
+    "start": 9.583,
+    "end": 9.924
+   },
+   {
+    "word": "un",
+    "start": 9.924,
+    "end": 10.06
+   },
+   {
+    "word": "servei",
+    "start": 10.06,
+    "end": 10.594
+   },
+   {
+    "word": "WebDAV",
+    "start": 10.594,
+    "end": 11.651
+   },
+   {
+    "word": "opcional",
+    "start": 11.651,
+    "end": 12.253
+   }
+  ]
+ },
+ {
+  "id": "04-web",
+  "file": "voice/04-web.mp3",
+  "duration": 9.168,
+  "words": [
+   {
+    "word": "La",
+    "start": 0.099,
+    "end": 0.303
+   },
+   {
+    "word": "web",
+    "start": 0.303,
+    "end": 0.644
+   },
+   {
+    "word": "es",
+    "start": 0.644,
+    "end": 0.792
+   },
+   {
+    "word": "renova",
+    "start": 0.792,
+    "end": 1.406
+   },
+   {
+    "word": "Una",
+    "start": 2.174,
+    "end": 2.378
+   },
+   {
+    "word": "interfície",
+    "start": 2.378,
+    "end": 3.094
+   },
+   {
+    "word": "més",
+    "start": 3.094,
+    "end": 3.367
+   },
+   {
+    "word": "neta",
+    "start": 3.367,
+    "end": 3.901
+   },
+   {
+    "word": "i",
+    "start": 3.992,
+    "end": 4.072
+   },
+   {
+    "word": "la",
+    "start": 4.072,
+    "end": 4.162
+   },
+   {
+    "word": "informació",
+    "start": 4.162,
+    "end": 4.799
+   },
+   {
+    "word": "del",
+    "start": 4.799,
+    "end": 4.935
+   },
+   {
+    "word": "sistema",
+    "start": 4.935,
+    "end": 5.537
+   },
+   {
+    "word": "s'obre",
+    "start": 5.537,
+    "end": 5.935
+   },
+   {
+    "word": "més",
+    "start": 5.935,
+    "end": 6.151
+   },
+   {
+    "word": "ràpid",
+    "start": 6.151,
+    "end": 6.753
+   },
+   {
+    "word": "i",
+    "start": 6.753,
+    "end": 6.924
+   },
+   {
+    "word": "ara",
+    "start": 6.924,
+    "end": 7.151
+   },
+   {
+    "word": "inclou",
+    "start": 7.151,
+    "end": 7.651
+   },
+   {
+    "word": "el",
+    "start": 7.651,
+    "end": 7.719
+   },
+   {
+    "word": "manteniment",
+    "start": 7.719,
+    "end": 8.401
+   }
+  ]
+ },
+ {
+  "id": "05-settings",
+  "file": "voice/05-settings.mp3",
+  "duration": 8.04,
+  "words": [
+   {
+    "word": "Els",
+    "start": 0.099,
+    "end": 0.326
+   },
+   {
+    "word": "paràmetres",
+    "start": 0.326,
+    "end": 0.928
+   },
+   {
+    "word": "se",
+    "start": 0.928,
+    "end": 1.042
+   },
+   {
+    "word": "separen",
+    "start": 1.042,
+    "end": 1.531
+   },
+   {
+    "word": "en",
+    "start": 1.531,
+    "end": 1.667
+   },
+   {
+    "word": "dos",
+    "start": 1.667,
+    "end": 2.076
+   },
+   {
+    "word": "dinàmics",
+    "start": 2.19,
+    "end": 2.928
+   },
+   {
+    "word": "que",
+    "start": 3.019,
+    "end": 3.122
+   },
+   {
+    "word": "s'apliquen",
+    "start": 3.122,
+    "end": 3.678
+   },
+   {
+    "word": "a",
+    "start": 3.678,
+    "end": 3.701
+   },
+   {
+    "word": "l'instant",
+    "start": 3.701,
+    "end": 4.36
+   },
+   {
+    "word": "i",
+    "start": 4.531,
+    "end": 4.667
+   },
+   {
+    "word": "estàtics",
+    "start": 4.667,
+    "end": 5.372
+   },
+   {
+    "word": "que",
+    "start": 5.497,
+    "end": 5.599
+   },
+   {
+    "word": "s'apliquen",
+    "start": 5.599,
+    "end": 6.167
+   },
+   {
+    "word": "després",
+    "start": 6.167,
+    "end": 6.576
+   },
+   {
+    "word": "de",
+    "start": 6.576,
+    "end": 6.667
+   },
+   {
+    "word": "reiniciar",
+    "start": 6.667,
+    "end": 7.281
+   }
+  ]
+ },
+ {
+  "id": "06-security",
+  "file": "voice/06-security.mp3",
+  "duration": 11.832,
+  "words": [
+   {
+    "word": "Més",
+    "start": 0.099,
+    "end": 0.474
+   },
+   {
+    "word": "seguretat",
+    "start": 0.474,
+    "end": 1.349
+   },
+   {
+    "word": "Importa",
+    "start": 2.106,
+    "end": 2.662
+   },
+   {
+    "word": "els",
+    "start": 2.663,
+    "end": 2.833
+   },
+   {
+    "word": "teus",
+    "start": 2.833,
+    "end": 3.037
+   },
+   {
+    "word": "certificats",
+    "start": 3.038,
+    "end": 3.753
+   },
+   {
+    "word": "TLS",
+    "start": 3.753,
+    "end": 4.651
+   },
+   {
+    "word": "protegeix",
+    "start": 4.753,
+    "end": 5.253
+   },
+   {
+    "word": "el",
+    "start": 5.253,
+    "end": 5.344
+   },
+   {
+    "word": "sistema",
+    "start": 5.344,
+    "end": 5.992
+   },
+   {
+    "word": "amb",
+    "start": 5.992,
+    "end": 6.14
+   },
+   {
+    "word": "un",
+    "start": 6.14,
+    "end": 6.31
+   },
+   {
+    "word": "dongle",
+    "start": 6.31,
+    "end": 6.765
+   },
+   {
+    "word": "USB",
+    "start": 6.765,
+    "end": 7.572
+   },
+   {
+    "word": "i",
+    "start": 7.947,
+    "end": 8.026
+   },
+   {
+    "word": "restaura",
+    "start": 8.026,
+    "end": 8.481
+   },
+   {
+    "word": "les",
+    "start": 8.481,
+    "end": 8.651
+   },
+   {
+    "word": "còpies",
+    "start": 8.651,
+    "end": 9.06
+   },
+   {
+    "word": "de",
+    "start": 9.06,
+    "end": 9.14
+   },
+   {
+    "word": "seguretat",
+    "start": 9.14,
+    "end": 9.753
+   },
+   {
+    "word": "des",
+    "start": 9.753,
+    "end": 9.969
+   },
+   {
+    "word": "de",
+    "start": 9.969,
+    "end": 10.049
+   },
+   {
+    "word": "l'assistent",
+    "start": 10.049,
+    "end": 10.594
+   },
+   {
+    "word": "d'inici",
+    "start": 10.594,
+    "end": 11.06
+   }
+  ]
+ },
+ {
+  "id": "07-scindoor",
+  "file": "voice/07-scindoor.mp3",
+  "duration": 14.832,
+  "words": [
+   {
+    "word": "SC",
+    "start": 0.099,
+    "end": 0.656
+   },
+   {
+    "word": "Indoor",
+    "start": 0.656,
+    "end": 1.076
+   },
+   {
+    "word": "passa",
+    "start": 1.076,
+    "end": 1.542
+   },
+   {
+    "word": "a",
+    "start": 1.542,
+    "end": 1.599
+   },
+   {
+    "word": "l'API",
+    "start": 1.599,
+    "end": 1.94
+   },
+   {
+    "word": "cinc",
+    "start": 1.94,
+    "end": 2.212
+   },
+   {
+    "word": "punt",
+    "start": 2.212,
+    "end": 2.576
+   },
+   {
+    "word": "u",
+    "start": 2.576,
+    "end": 2.963
+   },
+   {
+    "word": "i",
+    "start": 2.962,
+    "end": 3.11
+   },
+   {
+    "word": "treballa",
+    "start": 3.11,
+    "end": 3.747
+   },
+   {
+    "word": "amb",
+    "start": 3.747,
+    "end": 3.883
+   },
+   {
+    "word": "el",
+    "start": 3.883,
+    "end": 4.019
+   },
+   {
+    "word": "docker",
+    "start": 4.019,
+    "end": 4.474
+   },
+   {
+    "word": "SC",
+    "start": 4.474,
+    "end": 5.019
+   },
+   {
+    "word": "Indoor",
+    "start": 5.019,
+    "end": 5.349
+   },
+   {
+    "word": "AI",
+    "start": 5.349,
+    "end": 5.622
+   },
+   {
+    "word": "Birdwatch",
+    "start": 6.38,
+    "end": 7.05
+   },
+   {
+    "word": "pot",
+    "start": 7.05,
+    "end": 7.289
+   },
+   {
+    "word": "gestionar",
+    "start": 7.289,
+    "end": 7.857
+   },
+   {
+    "word": "el",
+    "start": 7.857,
+    "end": 7.993
+   },
+   {
+    "word": "DNS",
+    "start": 7.993,
+    "end": 8.8
+   },
+   {
+    "word": "i",
+    "start": 8.8,
+    "end": 8.925
+   },
+   {
+    "word": "el",
+    "start": 8.925,
+    "end": 9.061
+   },
+   {
+    "word": "DHCP",
+    "start": 9.061,
+    "end": 9.97
+   },
+   {
+    "word": "i",
+    "start": 10.323,
+    "end": 10.436
+   },
+   {
+    "word": "amb",
+    "start": 10.436,
+    "end": 10.573
+   },
+   {
+    "word": "una",
+    "start": 10.573,
+    "end": 10.777
+   },
+   {
+    "word": "sola",
+    "start": 10.777,
+    "end": 11.107
+   },
+   {
+    "word": "ubicació",
+    "start": 11.107,
+    "end": 11.755
+   },
+   {
+    "word": "reconeix",
+    "start": 11.755,
+    "end": 12.334
+   },
+   {
+    "word": "les",
+    "start": 12.334,
+    "end": 12.516
+   },
+   {
+    "word": "matrícules",
+    "start": 12.516,
+    "end": 13.118
+   },
+   {
+    "word": "de",
+    "start": 13.118,
+    "end": 13.232
+   },
+   {
+    "word": "tota",
+    "start": 13.232,
+    "end": 13.584
+   },
+   {
+    "word": "la",
+    "start": 13.584,
+    "end": 13.686
+   },
+   {
+    "word": "zona",
+    "start": 13.686,
+    "end": 14.05
+   }
+  ]
+ },
+ {
+  "id": "08-displays",
+  "file": "voice/08-displays.mp3",
+  "duration": 7.368,
+  "words": [
+   {
+    "word": "Les",
+    "start": 0.099,
+    "end": 0.394
+   },
+   {
+    "word": "pantalles",
+    "start": 0.394,
+    "end": 0.951
+   },
+   {
+    "word": "de",
+    "start": 0.951,
+    "end": 1.053
+   },
+   {
+    "word": "nova",
+    "start": 1.053,
+    "end": 1.315
+   },
+   {
+    "word": "generació",
+    "start": 1.315,
+    "end": 2.019
+   },
+   {
+    "word": "ja",
+    "start": 2.019,
+    "end": 2.224
+   },
+   {
+    "word": "són",
+    "start": 2.224,
+    "end": 2.462
+   },
+   {
+    "word": "compatibles",
+    "start": 2.462,
+    "end": 3.326
+   },
+   {
+    "word": "amb",
+    "start": 3.326,
+    "end": 3.485
+   },
+   {
+    "word": "les",
+    "start": 3.485,
+    "end": 3.678
+   },
+   {
+    "word": "A",
+    "start": 3.678,
+    "end": 3.724
+   },
+   {
+    "word": "u",
+    "start": 3.724,
+    "end": 3.94
+   },
+   {
+    "word": "d'Ampron",
+    "start": 3.94,
+    "end": 4.565
+   },
+   {
+    "word": "i",
+    "start": 4.758,
+    "end": 4.894
+   },
+   {
+    "word": "hi",
+    "start": 4.894,
+    "end": 5.065
+   },
+   {
+    "word": "ha",
+    "start": 5.065,
+    "end": 5.144
+   },
+   {
+    "word": "noves",
+    "start": 5.144,
+    "end": 5.508
+   },
+   {
+    "word": "eines",
+    "start": 5.508,
+    "end": 5.883
+   },
+   {
+    "word": "de",
+    "start": 5.883,
+    "end": 5.985
+   },
+   {
+    "word": "diagnosi",
+    "start": 5.985,
+    "end": 6.599
+   }
+  ]
+ },
+ {
+  "id": "09-fixes",
+  "file": "voice/09-fixes.mp3",
+  "duration": 11.232,
+  "words": [
+   {
+    "word": "En",
+    "start": 0.099,
+    "end": 0.315
+   },
+   {
+    "word": "total",
+    "start": 0.315,
+    "end": 0.906
+   },
+   {
+    "word": "quaranta-set",
+    "start": 1.008,
+    "end": 1.792
+   },
+   {
+    "word": "canvis",
+    "start": 1.792,
+    "end": 2.383
+   },
+   {
+    "word": "Setze",
+    "start": 3.14,
+    "end": 3.674
+   },
+   {
+    "word": "errors",
+    "start": 3.674,
+    "end": 4.026
+   },
+   {
+    "word": "corregits",
+    "start": 4.026,
+    "end": 4.788
+   },
+   {
+    "word": "com",
+    "start": 4.867,
+    "end": 5.015
+   },
+   {
+    "word": "els",
+    "start": 5.015,
+    "end": 5.162
+   },
+   {
+    "word": "tokens",
+    "start": 5.162,
+    "end": 5.526
+   },
+   {
+    "word": "d'accés",
+    "start": 5.526,
+    "end": 5.958
+   },
+   {
+    "word": "que",
+    "start": 5.958,
+    "end": 6.072
+   },
+   {
+    "word": "apareixien",
+    "start": 6.072,
+    "end": 6.685
+   },
+   {
+    "word": "a",
+    "start": 6.685,
+    "end": 6.731
+   },
+   {
+    "word": "la",
+    "start": 6.731,
+    "end": 6.822
+   },
+   {
+    "word": "URL",
+    "start": 6.822,
+    "end": 7.572
+   },
+   {
+    "word": "o",
+    "start": 7.981,
+    "end": 8.094
+   },
+   {
+    "word": "el",
+    "start": 8.094,
+    "end": 8.174
+   },
+   {
+    "word": "contenidor",
+    "start": 8.174,
+    "end": 8.833
+   },
+   {
+    "word": "que",
+    "start": 8.833,
+    "end": 8.969
+   },
+   {
+    "word": "es",
+    "start": 8.969,
+    "end": 9.015
+   },
+   {
+    "word": "reiniciava",
+    "start": 9.015,
+    "end": 9.742
+   },
+   {
+    "word": "sense",
+    "start": 9.742,
+    "end": 10.151
+   },
+   {
+    "word": "parar",
+    "start": 10.151,
+    "end": 10.469
+   }
+  ]
+ },
+ {
+  "id": "10-removed",
+  "file": "voice/10-removed.mp3",
+  "duration": 11.832,
+  "words": [
+   {
+    "word": "I",
+    "start": 0.099,
+    "end": 0.224
+   },
+   {
+    "word": "diem",
+    "start": 0.224,
+    "end": 0.553
+   },
+   {
+    "word": "adéu",
+    "start": 0.553,
+    "end": 0.985
+   },
+   {
+    "word": "a",
+    "start": 0.985,
+    "end": 1.087
+   },
+   {
+    "word": "SmartREC",
+    "start": 1.087,
+    "end": 2.383
+   },
+   {
+    "word": "a",
+    "start": 2.724,
+    "end": 2.781
+   },
+   {
+    "word": "les",
+    "start": 2.781,
+    "end": 2.951
+   },
+   {
+    "word": "vistes",
+    "start": 2.951,
+    "end": 3.349
+   },
+   {
+    "word": "SQL",
+    "start": 3.349,
+    "end": 4.156
+   },
+   {
+    "word": "i",
+    "start": 4.156,
+    "end": 4.303
+   },
+   {
+    "word": "a",
+    "start": 4.303,
+    "end": 4.337
+   },
+   {
+    "word": "la",
+    "start": 4.338,
+    "end": 4.428
+   },
+   {
+    "word": "llicència",
+    "start": 4.428,
+    "end": 5.167
+   },
+   {
+    "word": "IRW",
+    "start": 5.167,
+    "end": 6.031
+   },
+   {
+    "word": "Find",
+    "start": 6.787,
+    "end": 7.197
+   },
+   {
+    "word": "your",
+    "start": 7.197,
+    "end": 7.56
+   },
+   {
+    "word": "car",
+    "start": 7.56,
+    "end": 7.81
+   },
+   {
+    "word": "tornarà",
+    "start": 7.81,
+    "end": 8.481
+   },
+   {
+    "word": "redissenyat",
+    "start": 8.572,
+    "end": 9.447
+   },
+   {
+    "word": "en",
+    "start": 9.81,
+    "end": 9.935
+   },
+   {
+    "word": "una",
+    "start": 9.935,
+    "end": 10.128
+   },
+   {
+    "word": "propera",
+    "start": 10.128,
+    "end": 10.606
+   },
+   {
+    "word": "versió",
+    "start": 10.606,
+    "end": 11.06
+   }
+  ]
+ },
+ {
+  "id": "11-outro",
+  "file": "voice/11-outro.mp3",
+  "duration": 6.024,
+  "words": [
+   {
+    "word": "Birdwatch",
+    "start": 0.099,
+    "end": 0.838
+   },
+   {
+    "word": "tres",
+    "start": 0.838,
+    "end": 1.349
+   },
+   {
+    "word": "Més",
+    "start": 2.106,
+    "end": 2.469
+   },
+   {
+    "word": "net",
+    "start": 2.469,
+    "end": 2.947
+   },
+   {
+    "word": "més",
+    "start": 3.06,
+    "end": 3.356
+   },
+   {
+    "word": "segur",
+    "start": 3.356,
+    "end": 3.856
+   },
+   {
+    "word": "i",
+    "start": 3.856,
+    "end": 3.947
+   },
+   {
+    "word": "més",
+    "start": 3.947,
+    "end": 4.219
+   },
+   {
+    "word": "fàcil",
+    "start": 4.219,
+    "end": 4.64
+   },
+   {
+    "word": "de",
+    "start": 4.64,
+    "end": 4.731
+   },
+   {
+    "word": "mantenir",
+    "start": 4.731,
+    "end": 5.231
+   }
+  ]
+ }
+]
