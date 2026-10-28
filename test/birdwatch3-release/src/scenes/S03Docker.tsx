@@ -2,7 +2,8 @@ import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { easeInOut, lerp, overshoot, prog } from "../anim";
 import { Punch, Rise, SectionLabel, Typed } from "../components/Kinetic";
 import { colors, fontFamily, monoFamily, moduleColors } from "../theme";
-import { useWordFrame } from "../voice";
+import { useCopy } from "../copy";
+import { useCue } from "../voice";
 
 const Row: React.FC<{ at: number; title: string; children: React.ReactNode }> = ({ at, title, children }) => {
   const frame = useCurrentFrame();
@@ -53,30 +54,31 @@ const Containers: React.FC<{ at: number }> = ({ at }) => {
 // "Birdwatch tres funciona amb Docker": install path, RAM limit and the optional WebDAV service.
 export const S03Docker: React.FC = () => {
   const frame = useCurrentFrame();
-  const at = useWordFrame("03-docker");
-  const tRam = at("limitar");
+  const at = useCue("03-docker");
+  const t = useCopy().docker;
+  const tRam = at("limit");
   const fill = prog(frame, tRam + 4, 30, easeInOut);
-  const capped = prog(frame, at("RAM") + 4, 16, easeInOut);
+  const capped = prog(frame, at("ram") + 4, 16, easeInOut);
   const ram = lerp(fill * 0.95, 0.6, capped);
 
   return (
     <AbsoluteFill style={{ backgroundColor: colors.white, fontFamily, overflow: "hidden" }}>
       <div style={{ position: "absolute", left: 140, top: 110 }}>
-        <SectionLabel at={0} index="01" text="DOCKER" color={colors.grey} accent={colors.orange} />
+        <SectionLabel at={0} index="01" text={t.label} color={colors.grey} accent={colors.orange} />
       </div>
       <div style={{ position: "absolute", left: 140, top: 250, display: "flex", flexDirection: "column", gap: 40 }}>
         <div style={{ fontSize: 76, fontWeight: 800, color: colors.ink, lineHeight: 1.05, letterSpacing: "-0.02em" }}>
-          <Rise at={at("Birdwatch")}>Birdwatch 3</Rise>
+          <Rise at={at("name")}>{t.line1}</Rise>
           <br />
-          <Rise at={at("funciona")}>funciona amb</Rise>
+          <Rise at={at("runs")}>{t.line2}</Rise>
         </div>
         <div style={{ fontSize: 200, fontWeight: 800, color: colors.orange, lineHeight: 1, letterSpacing: "-0.04em" }}>
-          <Punch at={at("Docker")}>Docker</Punch>
+          <Punch at={at("docker")}>Docker</Punch>
         </div>
-        <Containers at={at("Docker") + 6} />
+        <Containers at={at("docker") + 6} />
       </div>
       <div style={{ position: "absolute", left: 1010, top: 250, width: 770, display: "flex", flexDirection: "column", gap: 58 }}>
-        <Row at={at("S'instal·la")} title="INSTAL·LACIÓ">
+        <Row at={at("install")} title={t.install}>
           <div
             style={{
               backgroundColor: colors.ink,
@@ -87,10 +89,10 @@ export const S03Docker: React.FC = () => {
             }}
           >
             <span style={{ color: colors.orange }}>$ </span>
-            <Typed at={at("carpeta")} text="/opt/quercus/birdwatch3" speed={1} caretColor={colors.orange} />
+            <Typed at={at("folder")} text="/opt/quercus/birdwatch3" speed={1} caretColor={colors.orange} />
           </div>
         </Row>
-        <Row at={tRam} title="MEMÒRIA RAM">
+        <Row at={tRam} title={t.ram}>
           <div style={{ fontFamily: monoFamily, fontSize: 36, color: colors.ink }}>
             BW3_MEMORY_LIMIT=<span style={{ color: colors.orange, opacity: capped }}>6g</span>
           </div>
@@ -109,10 +111,10 @@ export const S03Docker: React.FC = () => {
             />
           </div>
         </Row>
-        <Row at={at("pàrquings")} title="PÀRQUINGS PETITS">
+        <Row at={at("small")} title={t.small}>
           <div style={{ display: "flex", alignItems: "center", gap: 24 }}>
             <div style={{ fontSize: 76, fontWeight: 800, color: colors.ink, letterSpacing: "-0.02em" }}>
-              <Punch at={at("WebDAV")} from={1.8}>
+              <Punch at={at("webdav")} from={1.8}>
                 WebDAV
               </Punch>
             </div>
@@ -124,11 +126,11 @@ export const S03Docker: React.FC = () => {
                 border: `3px solid ${colors.orange}`,
                 color: colors.orange,
                 letterSpacing: "0.1em",
-                opacity: prog(frame, at("opcional"), 8),
-                scale: String(lerp(1.4, 1, prog(frame, at("opcional"), 10, overshoot))),
+                opacity: prog(frame, at("optional"), 8),
+                scale: String(lerp(1.4, 1, prog(frame, at("optional"), 10, overshoot))),
               }}
             >
-              OPCIONAL
+              {t.optional}
             </div>
           </div>
         </Row>

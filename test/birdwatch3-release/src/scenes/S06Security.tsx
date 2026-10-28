@@ -3,7 +3,8 @@ import { lerp, overshoot, prog } from "../anim";
 import { LockIcon, RestoreIcon, UsbIcon } from "../components/Icons";
 import { Punch, Rise, SectionLabel } from "../components/Kinetic";
 import { colors, fontFamily } from "../theme";
-import { useWordFrame } from "../voice";
+import { useCopy } from "../copy";
+import { useCue } from "../voice";
 
 const Card: React.FC<{
   at: number;
@@ -43,13 +44,14 @@ const Card: React.FC<{
 // "Més seguretat": TLS certificates, USB dongle protection and backups restored from the startup wizard.
 export const S06Security: React.FC = () => {
   const frame = useCurrentFrame();
-  const at = useWordFrame("06-security");
-  const lift = prog(frame, at("Importa") - 6, 20);
+  const at = useCue("06-security");
+  const t = useCopy().security;
+  const lift = prog(frame, at("import") - 6, 20);
 
   return (
     <AbsoluteFill style={{ backgroundColor: colors.ink, fontFamily, overflow: "hidden" }}>
       <div style={{ position: "absolute", left: 140, top: 110 }}>
-        <SectionLabel at={0} index="04" text="SEGURETAT" color={colors.surface} accent={colors.orange} />
+        <SectionLabel at={0} index="04" text={t.label} color={colors.surface} accent={colors.orange} />
       </div>
       <div
         style={{
@@ -63,7 +65,7 @@ export const S06Security: React.FC = () => {
           lineHeight: 1,
         }}
       >
-        <Rise at={at("Més")}>Més</Rise> <Rise at={at("seguretat")} style={{ color: colors.orange }}>seguretat</Rise>
+        <Rise at={at("more")}>{t.more}</Rise> <Rise at={at("security")} style={{ color: colors.orange }}>{t.security}</Rise>
       </div>
       <div
         style={{
@@ -76,32 +78,32 @@ export const S06Security: React.FC = () => {
           color: colors.white,
           padding: "8px 20px",
           border: `3px solid ${colors.grey}`,
-          opacity: prog(frame, at("seguretat") + 10, 12),
+          opacity: prog(frame, at("security") + 10, 12),
         }}
       >
-        LLICÈNCIA v3.1
+        {t.license}
       </div>
       <div style={{ position: "absolute", left: 140, top: 400, display: "flex", gap: 70 }}>
         <Card
-          at={at("Importa")}
-          tWord={at("TLS")}
+          at={at("import")}
+          tWord={at("tls")}
           icon={<LockIcon size={110} color={colors.orange} />}
           word="TLS/SSL"
-          caption="Certificats importats des d'Integrations"
+          caption={t.tls}
         />
         <Card
-          at={at("protegeix")}
-          tWord={at("USB")}
+          at={at("protect")}
+          tWord={at("usb")}
           icon={<UsbIcon size={110} color={colors.orange} />}
           word="USB"
-          caption="Protecció amb dongle per a sistemes sense llicència dongleless"
+          caption={t.usb}
         />
         <Card
-          at={at("restaura")}
-          tWord={at("còpies")}
+          at={at("restore")}
+          tWord={at("backups")}
           icon={<RestoreIcon size={110} color={colors.orange} />}
           word="Backup"
-          caption="Es restaura des de l'assistent d'inici"
+          caption={t.backup}
         />
       </div>
     </AbsoluteFill>

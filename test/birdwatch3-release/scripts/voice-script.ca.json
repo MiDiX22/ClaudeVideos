@@ -1,0 +1,17 @@
+{
+ "voice": "ca-ES-JoanaNeural",
+ "rate": "+10%",
+ "clips": [
+  { "id": "01-intro", "text": "{arrives}Arriba {name}Birdwatch {three}tres." },
+  { "id": "02-versions", "text": "{two}Dues {versions}versions. La {v300}tres punt zero, en {alpha}alfa, al {sept}setembre. I la {v301}tres punt zero punt u, en {beta}beta, a {oct}l'octubre." },
+  { "id": "03-docker", "text": "{name}Birdwatch tres {runs}funciona amb {docker}Docker. {install}S'instal·la a la {folder}carpeta opt quercus, pots {limit}limitar la memòria {ram}RAM que fa servir, i els {small}pàrquings petits tenen un servei {webdav}WebDAV {optional}opcional." },
+  { "id": "04-web", "text": "{line1}La web {line2}es {renew}renova. {window}Una interfície {cleaner}més neta, i la informació del sistema s'obre més {fast}ràpid i ara {includes}inclou el {maintenance}manteniment." },
+  { "id": "05-settings", "text": "{title}Els paràmetres se separen {split}en dos: {dynamic}dinàmics, que s'apliquen a {instant}l'instant, i {static}estàtics, que s'apliquen després de {reboot}reiniciar." },
+  { "id": "06-security", "text": "{more}Més {security}seguretat. {import}Importa els teus certificats {tls}TLS, {protect}protegeix el sistema amb un dongle {usb}USB, i {restore}restaura les {backups}còpies de seguretat des de l'assistent d'inici." },
+  { "id": "07-scindoor", "text": "{sc}SC {indoor}Indoor passa a {api}l'API {five}cinc punt u i {works}treballa amb el {aiDocker}docker {aiChip}SC Indoor {ai}AI. {network}Birdwatch pot {manage}gestionar el {dns}DNS i el {dhcp}DHCP, i amb una sola {location}ubicació reconeix les matrícules de tota la zona." },
+  { "id": "08-displays", "text": "Les {line1}pantalles de {line2}nova generació ja són {compatible}compatibles amb les {a1}A u d'Ampron, i hi ha {newTools}noves {tools}eines de {diagnosis}diagnosi." },
+  { "id": "09-fixes", "text": "En total, {changes}quaranta-set {changesWord}canvis. {bugs}Setze {errorsWord}errors {fixedWord}corregits, com els {tokens}tokens d'accés que apareixien a la {url}URL, o el {container}contenidor que es reiniciava sense {stop}parar." },
+  { "id": "10-removed", "text": "I diem {bye}adéu a {smartrec}SmartREC, a les {views}vistes {sql}SQL i a la {license}llicència {irw}IRW. {find}Find your car {back}tornarà, {redesigned}redissenyat, en una {next}propera versió." },
+  { "id": "11-outro", "text": "{name}Birdwatch tres. {more1}Més net, {more2}més segur i {more3}més fàcil de {maintain}mantenir." }
+ ]
+}

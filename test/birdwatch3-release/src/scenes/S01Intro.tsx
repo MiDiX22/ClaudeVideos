@@ -1,15 +1,17 @@
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { easeInOut, lerp, overshoot, prog } from "../anim";
 import { colors, fontFamily } from "../theme";
-import { useWordFrame } from "../voice";
+import { useCopy } from "../copy";
+import { useCue } from "../voice";
 
 // "Arriba Birdwatch tres." An orange square slams in carrying a giant 3.
 export const S01Intro: React.FC = () => {
   const frame = useCurrentFrame();
-  const at = useWordFrame("01-intro");
-  const tArriba = at("Arriba");
-  const tName = at("Birdwatch");
-  const tThree = at("tres");
+  const at = useCue("01-intro");
+  const t = useCopy().intro;
+  const tArriba = at("arrives");
+  const tName = at("name");
+  const tThree = at("three");
 
   const block = prog(frame, tThree - 4, 14, overshoot);
   const shake = frame >= tThree + 6 && frame < tThree + 14 ? Math.sin(frame * 3) * (tThree + 14 - frame) : 0;
@@ -38,7 +40,7 @@ export const S01Intro: React.FC = () => {
                 translate: `0px ${lerp(30, 0, prog(frame, tArriba, 16))}px`,
               }}
             >
-              ARRIBA
+              {t.arrives}
             </div>
             <div style={{ display: "flex", fontSize: 230, fontWeight: 800, letterSpacing: "-0.04em", lineHeight: 1 }}>
               {letters.map((l, i) => {

@@ -1,0 +1,1233 @@
+[
+ {
+  "id": "01-intro",
+  "file": "voice/en/01-intro.mp3",
+  "duration": 2.16,
+  "cues": {
+   "arrives": 0.121,
+   "name": 0.722,
+   "three": 1.359
+  },
+  "words": [
+   {
+    "word": "Here",
+    "start": 0.121,
+    "end": 0.333
+   },
+   {
+    "word": "comes",
+    "start": 0.345,
+    "end": 0.71
+   },
+   {
+    "word": "Birdwatch",
+    "start": 0.722,
+    "end": 1.347
+   },
+   {
+    "word": "three",
+    "start": 1.359,
+    "end": 1.807
+   }
+  ]
+ },
+ {
+  "id": "02-versions",
+  "file": "voice/en/02-versions.mp3",
+  "duration": 8.736,
+  "cues": {
+   "two": 0.099,
+   "versions": 0.37,
+   "v300": 1.5,
+   "alpha": 2.974,
+   "sept": 3.835,
+   "v301": 5.071,
+   "beta": 6.981,
+   "oct": 7.771
+  },
+  "words": [
+   {
+    "word": "Two",
+    "start": 0.099,
+    "end": 0.358
+   },
+   {
+    "word": "releases",
+    "start": 0.37,
+    "end": 1.16
+   },
+   {
+    "word": "Three",
+    "start": 1.5,
+    "end": 1.818
+   },
+   {
+    "word": "point",
+    "start": 1.83,
+    "end": 2.137
+   },
+   {
+    "word": "zero",
+    "start": 2.148,
+    "end": 2.62
+   },
+   {
+    "word": "in",
+    "start": 2.832,
+    "end": 2.962
+   },
+   {
+    "word": "alpha",
+    "start": 2.974,
+    "end": 3.481
+   },
+   {
+    "word": "in",
+    "start": 3.693,
+    "end": 3.823
+   },
+   {
+    "word": "September",
+    "start": 3.835,
+    "end": 4.53
+   },
+   {
+    "word": "And",
+    "start": 4.906,
+    "end": 5.059
+   },
+   {
+    "word": "three",
+    "start": 5.071,
+    "end": 5.318
+   },
+   {
+    "word": "point",
+    "start": 5.33,
+    "end": 5.649
+   },
+   {
+    "word": "zero",
+    "start": 5.66,
+    "end": 5.932
+   },
+   {
+    "word": "point",
+    "start": 5.943,
+    "end": 6.262
+   },
+   {
+    "word": "one",
+    "start": 6.274,
+    "end": 6.604
+   },
+   {
+    "word": "in",
+    "start": 6.851,
+    "end": 6.969
+   },
+   {
+    "word": "beta",
+    "start": 6.981,
+    "end": 7.429
+   },
+   {
+    "word": "in",
+    "start": 7.641,
+    "end": 7.759
+   },
+   {
+    "word": "October",
+    "start": 7.771,
+    "end": 8.384
+   }
+  ]
+ },
+ {
+  "id": "03-docker",
+  "file": "voice/en/03-docker.mp3",
+  "duration": 10.08,
+  "cues": {
+   "name": 0.099,
+   "runs": 1.043,
+   "docker": 1.609,
+   "install": 2.453,
+   "folder": 3.349,
+   "limit": 4.941,
+   "ram": 5.342,
+   "small": 6.545,
+   "webdav": 7.712,
+   "optional": 9.057
+  },
+  "words": [
+   {
+    "word": "Birdwatch",
+    "start": 0.099,
+    "end": 0.771
+   },
+   {
+    "word": "three",
+    "start": 0.783,
+    "end": 1.031
+   },
+   {
+    "word": "runs",
+    "start": 1.043,
+    "end": 1.444
+   },
+   {
+    "word": "on",
+    "start": 1.455,
+    "end": 1.597
+   },
+   {
+    "word": "Docker",
+    "start": 1.609,
+    "end": 2.08
+   },
+   {
+    "word": "It",
+    "start": 2.453,
+    "end": 2.571
+   },
+   {
+    "word": "installs",
+    "start": 2.583,
+    "end": 3.125
+   },
+   {
+    "word": "in",
+    "start": 3.137,
+    "end": 3.219
+   },
+   {
+    "word": "the",
+    "start": 3.231,
+    "end": 3.337
+   },
+   {
+    "word": "opt",
+    "start": 3.349,
+    "end": 3.597
+   },
+   {
+    "word": "quercus",
+    "start": 3.608,
+    "end": 4.009
+   },
+   {
+    "word": "folder",
+    "start": 4.021,
+    "end": 4.446
+   },
+   {
+    "word": "you",
+    "start": 4.705,
+    "end": 4.776
+   },
+   {
+    "word": "can",
+    "start": 4.788,
+    "end": 4.929
+   },
+   {
+    "word": "limit",
+    "start": 4.941,
+    "end": 5.224
+   },
+   {
+    "word": "the",
+    "start": 5.236,
+    "end": 5.33
+   },
+   {
+    "word": "RAM",
+    "start": 5.342,
+    "end": 5.531
+   },
+   {
+    "word": "it",
+    "start": 5.542,
+    "end": 5.672
+   },
+   {
+    "word": "uses",
+    "start": 5.684,
+    "end": 6.156
+   },
+   {
+    "word": "and",
+    "start": 6.403,
+    "end": 6.533
+   },
+   {
+    "word": "small",
+    "start": 6.545,
+    "end": 6.84
+   },
+   {
+    "word": "car",
+    "start": 6.851,
+    "end": 7.075
+   },
+   {
+    "word": "parks",
+    "start": 7.087,
+    "end": 7.465
+   },
+   {
+    "word": "get",
+    "start": 7.476,
+    "end": 7.641
+   },
+   {
+    "word": "a",
+    "start": 7.653,
+    "end": 7.7
+   },
+   {
+    "word": "WebDAV",
+    "start": 7.712,
+    "end": 8.373
+   },
+   {
+    "word": "service",
+    "start": 8.384,
+    "end": 8.88
+   },
+   {
+    "word": "as",
+    "start": 9.057,
+    "end": 9.151
+   },
+   {
+    "word": "an",
+    "start": 9.163,
+    "end": 9.245
+   },
+   {
+    "word": "option",
+    "start": 9.257,
+    "end": 9.717
+   }
+  ]
+ },
+ {
+  "id": "04-web",
+  "file": "voice/en/04-web.mp3",
+  "duration": 7.824,
+  "cues": {
+   "line1": 0.133,
+   "line2": 0.864,
+   "renew": 1.182,
+   "window": 2.17,
+   "cleaner": 2.276,
+   "fast": 5.024,
+   "includes": 6.274,
+   "maintenance": 6.71
+  },
+  "words": [
+   {
+    "word": "The",
+    "start": 0.133,
+    "end": 0.227
+   },
+   {
+    "word": "website",
+    "start": 0.239,
+    "end": 0.852
+   },
+   {
+    "word": "gets",
+    "start": 0.864,
+    "end": 1.111
+   },
+   {
+    "word": "a",
+    "start": 1.123,
+    "end": 1.17
+   },
+   {
+    "word": "refresh",
+    "start": 1.182,
+    "end": 1.819
+   },
+   {
+    "word": "A",
+    "start": 2.17,
+    "end": 2.264
+   },
+   {
+    "word": "cleaner",
+    "start": 2.276,
+    "end": 2.677
+   },
+   {
+    "word": "interface",
+    "start": 2.689,
+    "end": 3.384
+   },
+   {
+    "word": "system",
+    "start": 3.632,
+    "end": 3.998
+   },
+   {
+    "word": "information",
+    "start": 4.009,
+    "end": 4.646
+   },
+   {
+    "word": "opens",
+    "start": 4.658,
+    "end": 5.012
+   },
+   {
+    "word": "faster",
+    "start": 5.024,
+    "end": 5.507
+   },
+   {
+    "word": "and",
+    "start": 5.778,
+    "end": 5.896
+   },
+   {
+    "word": "it",
+    "start": 5.908,
+    "end": 6.026
+   },
+   {
+    "word": "now",
+    "start": 6.038,
+    "end": 6.262
+   },
+   {
+    "word": "includes",
+    "start": 6.274,
+    "end": 6.698
+   },
+   {
+    "word": "maintenance",
+    "start": 6.71,
+    "end": 7.476
+   }
+  ]
+ },
+ {
+  "id": "05-settings",
+  "file": "voice/en/05-settings.mp3",
+  "duration": 6.408,
+  "cues": {
+   "title": 0.121,
+   "split": 0.675,
+   "dynamic": 1.795,
+   "instant": 2.975,
+   "static": 3.953,
+   "reboot": 5.463
+  },
+  "words": [
+   {
+    "word": "Settings",
+    "start": 0.121,
+    "end": 0.616
+   },
+   {
+    "word": "are",
+    "start": 0.628,
+    "end": 0.663
+   },
+   {
+    "word": "split",
+    "start": 0.675,
+    "end": 0.993
+   },
+   {
+    "word": "in",
+    "start": 1.005,
+    "end": 1.123
+   },
+   {
+    "word": "two",
+    "start": 1.135,
+    "end": 1.5
+   },
+   {
+    "word": "dynamic",
+    "start": 1.795,
+    "end": 2.408
+   },
+   {
+    "word": "applied",
+    "start": 2.597,
+    "end": 2.963
+   },
+   {
+    "word": "instantly",
+    "start": 2.975,
+    "end": 3.623
+   },
+   {
+    "word": "and",
+    "start": 3.812,
+    "end": 3.941
+   },
+   {
+    "word": "static",
+    "start": 3.953,
+    "end": 4.508
+   },
+   {
+    "word": "applied",
+    "start": 4.708,
+    "end": 5.097
+   },
+   {
+    "word": "after",
+    "start": 5.109,
+    "end": 5.38
+   },
+   {
+    "word": "a",
+    "start": 5.392,
+    "end": 5.451
+   },
+   {
+    "word": "reboot",
+    "start": 5.463,
+    "end": 6.064
+   }
+  ]
+ },
+ {
+  "id": "06-security",
+  "file": "voice/en/06-security.mp3",
+  "duration": 8.736,
+  "cues": {
+   "more": 0.109,
+   "security": 0.38,
+   "import": 1.557,
+   "tls": 2.453,
+   "protect": 3.88,
+   "usb": 5.012,
+   "restore": 6.344,
+   "backups": 6.734
+  },
+  "words": [
+   {
+    "word": "More",
+    "start": 0.109,
+    "end": 0.368
+   },
+   {
+    "word": "security",
+    "start": 0.38,
+    "end": 1.182
+   },
+   {
+    "word": "Import",
+    "start": 1.557,
+    "end": 1.981
+   },
+   {
+    "word": "your",
+    "start": 1.993,
+    "end": 2.17
+   },
+   {
+    "word": "own",
+    "start": 2.182,
+    "end": 2.441
+   },
+   {
+    "word": "TLS",
+    "start": 2.453,
+    "end": 2.913
+   },
+   {
+    "word": "certificates",
+    "start": 2.925,
+    "end": 3.632
+   },
+   {
+    "word": "protect",
+    "start": 3.88,
+    "end": 4.281
+   },
+   {
+    "word": "the",
+    "start": 4.292,
+    "end": 4.375
+   },
+   {
+    "word": "system",
+    "start": 4.387,
+    "end": 4.8
+   },
+   {
+    "word": "with",
+    "start": 4.811,
+    "end": 4.953
+   },
+   {
+    "word": "a",
+    "start": 4.965,
+    "end": 5.0
+   },
+   {
+    "word": "USB",
+    "start": 5.012,
+    "end": 5.531
+   },
+   {
+    "word": "dongle",
+    "start": 5.542,
+    "end": 5.955
+   },
+   {
+    "word": "and",
+    "start": 6.25,
+    "end": 6.333
+   },
+   {
+    "word": "restore",
+    "start": 6.344,
+    "end": 6.722
+   },
+   {
+    "word": "backups",
+    "start": 6.734,
+    "end": 7.205
+   },
+   {
+    "word": "from",
+    "start": 7.217,
+    "end": 7.37
+   },
+   {
+    "word": "the",
+    "start": 7.382,
+    "end": 7.465
+   },
+   {
+    "word": "startup",
+    "start": 7.476,
+    "end": 7.948
+   },
+   {
+    "word": "wizard",
+    "start": 7.96,
+    "end": 8.373
+   }
+  ]
+ },
+ {
+  "id": "07-scindoor",
+  "file": "voice/en/07-scindoor.mp3",
+  "duration": 12.96,
+  "cues": {
+   "sc": 0.099,
+   "indoor": 0.559,
+   "api": 1.432,
+   "five": 1.962,
+   "works": 3.26,
+   "aiDocker": 3.908,
+   "aiChip": 3.908,
+   "ai": 4.769,
+   "network": 5.943,
+   "manage": 6.686,
+   "dns": 7.075,
+   "dhcp": 7.807,
+   "location": 9.693
+  },
+  "words": [
+   {
+    "word": "SC",
+    "start": 0.099,
+    "end": 0.547
+   },
+   {
+    "word": "Indoor",
+    "start": 0.559,
+    "end": 0.948
+   },
+   {
+    "word": "moves",
+    "start": 0.96,
+    "end": 1.267
+   },
+   {
+    "word": "to",
+    "start": 1.279,
+    "end": 1.42
+   },
+   {
+    "word": "API",
+    "start": 1.432,
+    "end": 1.951
+   },
+   {
+    "word": "five",
+    "start": 1.962,
+    "end": 2.245
+   },
+   {
+    "word": "point",
+    "start": 2.257,
+    "end": 2.517
+   },
+   {
+    "word": "one",
+    "start": 2.529,
+    "end": 2.847
+   },
+   {
+    "word": "and",
+    "start": 3.142,
+    "end": 3.248
+   },
+   {
+    "word": "works",
+    "start": 3.26,
+    "end": 3.625
+   },
+   {
+    "word": "with",
+    "start": 3.637,
+    "end": 3.743
+   },
+   {
+    "word": "the",
+    "start": 3.755,
+    "end": 3.896
+   },
+   {
+    "word": "SC",
+    "start": 3.908,
+    "end": 4.333
+   },
+   {
+    "word": "Indoor",
+    "start": 4.345,
+    "end": 4.757
+   },
+   {
+    "word": "AI",
+    "start": 4.769,
+    "end": 5.076
+   },
+   {
+    "word": "docker",
+    "start": 5.088,
+    "end": 5.571
+   },
+   {
+    "word": "Birdwatch",
+    "start": 5.943,
+    "end": 6.509
+   },
+   {
+    "word": "can",
+    "start": 6.521,
+    "end": 6.674
+   },
+   {
+    "word": "manage",
+    "start": 6.686,
+    "end": 7.064
+   },
+   {
+    "word": "DNS",
+    "start": 7.075,
+    "end": 7.653
+   },
+   {
+    "word": "and",
+    "start": 7.665,
+    "end": 7.795
+   },
+   {
+    "word": "DHCP",
+    "start": 7.807,
+    "end": 8.726
+   },
+   {
+    "word": "and",
+    "start": 8.998,
+    "end": 9.139
+   },
+   {
+    "word": "with",
+    "start": 9.151,
+    "end": 9.292
+   },
+   {
+    "word": "a",
+    "start": 9.304,
+    "end": 9.351
+   },
+   {
+    "word": "single",
+    "start": 9.363,
+    "end": 9.682
+   },
+   {
+    "word": "location",
+    "start": 9.693,
+    "end": 10.295
+   },
+   {
+    "word": "it",
+    "start": 10.519,
+    "end": 10.637
+   },
+   {
+    "word": "reads",
+    "start": 10.649,
+    "end": 10.896
+   },
+   {
+    "word": "number",
+    "start": 10.908,
+    "end": 11.144
+   },
+   {
+    "word": "plates",
+    "start": 11.156,
+    "end": 11.474
+   },
+   {
+    "word": "across",
+    "start": 11.486,
+    "end": 11.792
+   },
+   {
+    "word": "the",
+    "start": 11.804,
+    "end": 11.875
+   },
+   {
+    "word": "whole",
+    "start": 11.887,
+    "end": 12.123
+   },
+   {
+    "word": "region",
+    "start": 12.134,
+    "end": 12.606
+   }
+  ]
+ },
+ {
+  "id": "08-displays",
+  "file": "voice/en/08-displays.mp3",
+  "duration": 5.88,
+  "cues": {
+   "line1": 0.121,
+   "line2": 0.958,
+   "compatible": 1.854,
+   "a1": 2.668,
+   "newTools": 4.142,
+   "tools": 4.378,
+   "diagnosis": 5.015
+  },
+  "words": [
+   {
+    "word": "Next-generation",
+    "start": 0.121,
+    "end": 0.946
+   },
+   {
+    "word": "displays",
+    "start": 0.958,
+    "end": 1.512
+   },
+   {
+    "word": "are",
+    "start": 1.524,
+    "end": 1.618
+   },
+   {
+    "word": "now",
+    "start": 1.63,
+    "end": 1.842
+   },
+   {
+    "word": "compatible",
+    "start": 1.854,
+    "end": 2.491
+   },
+   {
+    "word": "with",
+    "start": 2.503,
+    "end": 2.656
+   },
+   {
+    "word": "Ampron",
+    "start": 2.668,
+    "end": 3.069
+   },
+   {
+    "word": "A",
+    "start": 3.081,
+    "end": 3.199
+   },
+   {
+    "word": "one",
+    "start": 3.21,
+    "end": 3.552
+   },
+   {
+    "word": "and",
+    "start": 3.835,
+    "end": 3.93
+   },
+   {
+    "word": "there",
+    "start": 3.942,
+    "end": 4.036
+   },
+   {
+    "word": "are",
+    "start": 4.048,
+    "end": 4.13
+   },
+   {
+    "word": "new",
+    "start": 4.142,
+    "end": 4.366
+   },
+   {
+    "word": "diagnosis",
+    "start": 4.378,
+    "end": 5.003
+   },
+   {
+    "word": "tools",
+    "start": 5.015,
+    "end": 5.522
+   }
+  ]
+ },
+ {
+  "id": "09-fixes",
+  "file": "voice/en/09-fixes.mp3",
+  "duration": 9.504,
+  "cues": {
+   "changes": 1.077,
+   "changesWord": 1.726,
+   "bugs": 2.795,
+   "errorsWord": 3.337,
+   "fixedWord": 3.656,
+   "tokens": 4.575,
+   "url": 6.014,
+   "container": 7.075,
+   "stop": 8.597
+  },
+  "words": [
+   {
+    "word": "In",
+    "start": 0.099,
+    "end": 0.299
+   },
+   {
+    "word": "total",
+    "start": 0.311,
+    "end": 0.841
+   },
+   {
+    "word": "forty-seven",
+    "start": 1.077,
+    "end": 1.714
+   },
+   {
+    "word": "changes",
+    "start": 1.726,
+    "end": 2.422
+   },
+   {
+    "word": "Sixteen",
+    "start": 2.795,
+    "end": 3.325
+   },
+   {
+    "word": "bugs",
+    "start": 3.337,
+    "end": 3.644
+   },
+   {
+    "word": "fixed",
+    "start": 3.656,
+    "end": 4.092
+   },
+   {
+    "word": "like",
+    "start": 4.363,
+    "end": 4.564
+   },
+   {
+    "word": "access",
+    "start": 4.575,
+    "end": 5.012
+   },
+   {
+    "word": "tokens",
+    "start": 5.024,
+    "end": 5.425
+   },
+   {
+    "word": "showing",
+    "start": 5.436,
+    "end": 5.708
+   },
+   {
+    "word": "up",
+    "start": 5.719,
+    "end": 5.837
+   },
+   {
+    "word": "in",
+    "start": 5.849,
+    "end": 5.92
+   },
+   {
+    "word": "the",
+    "start": 5.932,
+    "end": 6.002
+   },
+   {
+    "word": "URL",
+    "start": 6.014,
+    "end": 6.616
+   },
+   {
+    "word": "or",
+    "start": 6.899,
+    "end": 6.958
+   },
+   {
+    "word": "the",
+    "start": 6.969,
+    "end": 7.064
+   },
+   {
+    "word": "container",
+    "start": 7.075,
+    "end": 7.583
+   },
+   {
+    "word": "that",
+    "start": 7.594,
+    "end": 7.736
+   },
+   {
+    "word": "kept",
+    "start": 7.748,
+    "end": 7.995
+   },
+   {
+    "word": "restarting",
+    "start": 8.007,
+    "end": 8.585
+   },
+   {
+    "word": "endlessly",
+    "start": 8.597,
+    "end": 9.151
+   }
+  ]
+ },
+ {
+  "id": "10-removed",
+  "file": "voice/en/10-removed.mp3",
+  "duration": 10.008,
+  "cues": {
+   "bye": 0.616,
+   "smartrec": 1.182,
+   "views": 2.585,
+   "sql": 3.104,
+   "license": 4.036,
+   "irw": 4.696,
+   "find": 5.755,
+   "back": 6.557,
+   "redesigned": 7.5,
+   "next": 8.608
+  },
+  "words": [
+   {
+    "word": "And",
+    "start": 0.133,
+    "end": 0.239
+   },
+   {
+    "word": "we",
+    "start": 0.25,
+    "end": 0.368
+   },
+   {
+    "word": "say",
+    "start": 0.38,
+    "end": 0.604
+   },
+   {
+    "word": "goodbye",
+    "start": 0.616,
+    "end": 1.005
+   },
+   {
+    "word": "to",
+    "start": 1.017,
+    "end": 1.17
+   },
+   {
+    "word": "SmartREC",
+    "start": 1.182,
+    "end": 2.173
+   },
+   {
+    "word": "the",
+    "start": 2.432,
+    "end": 2.574
+   },
+   {
+    "word": "SQL",
+    "start": 2.585,
+    "end": 3.092
+   },
+   {
+    "word": "views",
+    "start": 3.104,
+    "end": 3.541
+   },
+   {
+    "word": "and",
+    "start": 3.765,
+    "end": 3.883
+   },
+   {
+    "word": "the",
+    "start": 3.894,
+    "end": 4.024
+   },
+   {
+    "word": "IRW",
+    "start": 4.036,
+    "end": 4.684
+   },
+   {
+    "word": "license",
+    "start": 4.696,
+    "end": 5.392
+   },
+   {
+    "word": "Find",
+    "start": 5.755,
+    "end": 6.097
+   },
+   {
+    "word": "your",
+    "start": 6.109,
+    "end": 6.226
+   },
+   {
+    "word": "car",
+    "start": 6.238,
+    "end": 6.545
+   },
+   {
+    "word": "will",
+    "start": 6.557,
+    "end": 6.71
+   },
+   {
+    "word": "be",
+    "start": 6.722,
+    "end": 6.84
+   },
+   {
+    "word": "back",
+    "start": 6.851,
+    "end": 7.264
+   },
+   {
+    "word": "redesigned",
+    "start": 7.5,
+    "end": 8.16
+   },
+   {
+    "word": "in",
+    "start": 8.396,
+    "end": 8.479
+   },
+   {
+    "word": "an",
+    "start": 8.491,
+    "end": 8.597
+   },
+   {
+    "word": "upcoming",
+    "start": 8.608,
+    "end": 9.08
+   },
+   {
+    "word": "release",
+    "start": 9.092,
+    "end": 9.658
+   }
+  ]
+ },
+ {
+  "id": "11-outro",
+  "file": "voice/en/11-outro.mp3",
+  "duration": 4.728,
+  "cues": {
+   "name": 0.109,
+   "more1": 1.571,
+   "more2": 2.361,
+   "more3": 3.269,
+   "maintain": 3.729
+  },
+  "words": [
+   {
+    "word": "Birdwatch",
+    "start": 0.109,
+    "end": 0.758
+   },
+   {
+    "word": "three",
+    "start": 0.769,
+    "end": 1.229
+   },
+   {
+    "word": "Cleaner",
+    "start": 1.571,
+    "end": 2.113
+   },
+   {
+    "word": "safer",
+    "start": 2.361,
+    "end": 2.88
+   },
+   {
+    "word": "and",
+    "start": 3.092,
+    "end": 3.257
+   },
+   {
+    "word": "easier",
+    "start": 3.269,
+    "end": 3.599
+   },
+   {
+    "word": "to",
+    "start": 3.611,
+    "end": 3.717
+   },
+   {
+    "word": "maintain",
+    "start": 3.729,
+    "end": 4.377
+   }
+  ]
+ }
+]

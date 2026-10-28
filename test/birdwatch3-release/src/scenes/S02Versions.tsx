@@ -2,7 +2,8 @@ import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { easeInOut, lerp, overshoot, prog } from "../anim";
 import { Rise } from "../components/Kinetic";
 import { colors, fontFamily, success } from "../theme";
-import { useWordFrame } from "../voice";
+import { useCopy } from "../copy";
+import { useCue } from "../voice";
 
 const LINE_Y = 640;
 
@@ -90,7 +91,8 @@ const Release: React.FC<{
 // "Dues versions": a timeline with 3.0.0 Alpha (September) and 3.0.1 Beta (October).
 export const S02Versions: React.FC = () => {
   const frame = useCurrentFrame();
-  const at = useWordFrame("02-versions");
+  const at = useCue("02-versions");
+  const t = useCopy().versions;
   const line = prog(frame, at("versions"), 40, easeInOut);
   const drift = lerp(30, -30, prog(frame, 0, 380, (t) => t));
 
@@ -109,9 +111,9 @@ export const S02Versions: React.FC = () => {
           gap: 28,
         }}
       >
-        <Rise at={at("Dues")}>Dues</Rise>
+        <Rise at={at("two")}>{t.two}</Rise>
         <Rise at={at("versions")} style={{ color: colors.orange }}>
-          versions
+          {t.versions}
         </Rise>
       </div>
       <AbsoluteFill style={{ translate: `${drift}px 0px` }}>
@@ -128,23 +130,23 @@ export const S02Versions: React.FC = () => {
         />
         <Release
           x={600}
-          tVersion={at("tres", 0)}
-          tStage={at("alfa")}
-          tDate={at("setembre")}
+          tVersion={at("v300")}
+          tStage={at("alpha")}
+          tDate={at("sept")}
           version="3.0.0"
           stage="ALPHA"
           stageColor={colors.orange}
-          date="15 SET 2026"
+          date={t.sept}
         />
         <Release
           x={1340}
-          tVersion={at("tres", 1)}
+          tVersion={at("v301")}
           tStage={at("beta")}
-          tDate={at("l'octubre")}
+          tDate={at("oct")}
           version="3.0.1"
           stage="BETA"
           stageColor={success}
-          date="15 OCT 2026"
+          date={t.oct}
         />
       </AbsoluteFill>
     </AbsoluteFill>

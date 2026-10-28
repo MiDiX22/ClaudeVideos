@@ -2,7 +2,8 @@ import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { easeInOut, lerp, overshoot, prog } from "../anim";
 import { Punch, Rise, SectionLabel } from "../components/Kinetic";
 import { colors, fontFamily } from "../theme";
-import { useWordFrame } from "../voice";
+import { useCopy } from "../copy";
+import { useCue } from "../voice";
 
 const Tab: React.FC<{ label: string; active?: boolean; style?: React.CSSProperties }> = ({ label, active, style }) => (
   <div
@@ -25,35 +26,36 @@ const Tab: React.FC<{ label: string; active?: boolean; style?: React.CSSProperti
 // "La web es renova": the website gets cleaner, System information opens faster and absorbs Maintenance.
 export const S04Web: React.FC = () => {
   const frame = useCurrentFrame();
-  const at = useWordFrame("04-web");
-  const tWin = at("Una");
+  const at = useCue("04-web");
+  const t = useCopy().web;
+  const tWin = at("window");
   const win = prog(frame, tWin, 20, overshoot);
-  const tFast = at("ràpid");
+  const tFast = at("fast");
   const load = prog(frame, tFast - 6, 8, easeInOut);
-  const tMerge = at("manteniment");
+  const tMerge = at("maintenance");
   const merge = prog(frame, tMerge - 10, 18, easeInOut);
   const pulse = prog(frame, tMerge + 8, 10, overshoot);
 
   return (
     <AbsoluteFill style={{ backgroundColor: colors.orange, fontFamily, overflow: "hidden" }}>
       <div style={{ position: "absolute", left: 140, top: 110 }}>
-        <SectionLabel at={0} index="02" text="WEB" color={colors.white} accent={colors.grey} />
+        <SectionLabel at={0} index="02" text={t.label} color={colors.white} accent={colors.grey} />
       </div>
       <div
         style={{
           position: "absolute",
           left: 140,
           top: 230,
-          fontSize: 150,
+          fontSize: t.size,
           fontWeight: 800,
           color: colors.white,
           lineHeight: 1,
           letterSpacing: "-0.04em",
         }}
       >
-        <Rise at={at("La")}>La web</Rise>
+        <Rise at={at("line1")}>{t.line1}</Rise>
         <br />
-        <Rise at={at("es")}>es</Rise> <Punch at={at("renova")} style={{ color: colors.grey }}>renova</Punch>
+        <Rise at={at("line2")}>{t.line2}</Rise> <Punch at={at("renew")} style={{ color: colors.grey }}>{t.renew}</Punch>
       </div>
       <div
         style={{
@@ -68,9 +70,9 @@ export const S04Web: React.FC = () => {
           color: colors.white,
         }}
       >
-        <Rise at={at("més")}>+ més neta</Rise>
-        <Rise at={tFast - 4}>+ més ràpida</Rise>
-        <Rise at={at("inclou")}>+ manteniment inclòs</Rise>
+        <Rise at={at("cleaner")}>{t.bullets[0]}</Rise>
+        <Rise at={tFast - 4}>{t.bullets[1]}</Rise>
+        <Rise at={at("includes")}>{t.bullets[2]}</Rise>
       </div>
       {/* Browser window with the refreshed System information page. */}
       <div

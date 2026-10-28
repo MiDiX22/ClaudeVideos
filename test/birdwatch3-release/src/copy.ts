@@ -1,0 +1,166 @@
+import { useLang } from "./voice";
+
+// On-screen text in each language. Product and menu names stay as they are in Birdwatch.
+const ca = {
+  intro: { arrives: "ARRIBA" },
+  versions: { two: "Dues", versions: "versions", sept: "15 SET 2026", oct: "15 OCT 2026" },
+  docker: {
+    label: "DOCKER",
+    line1: "Birdwatch 3",
+    line2: "funciona amb",
+    install: "INSTAL·LACIÓ",
+    ram: "MEMÒRIA RAM",
+    small: "PÀRQUINGS PETITS",
+    optional: "OPCIONAL",
+  },
+  web: {
+    label: "WEB",
+    size: 150,
+    line1: "La web",
+    line2: "es",
+    renew: "renova",
+    bullets: ["+ més neta", "+ més ràpida", "+ manteniment inclòs"],
+  },
+  settings: {
+    label: "PARÀMETRES",
+    title: "Paràmetres",
+    dynamic: "Dinàmics",
+    dynamicSub: "s'apliquen a l'instant",
+    static: "Estàtics",
+    staticSub: "després de reiniciar",
+  },
+  security: {
+    label: "SEGURETAT",
+    more: "Més",
+    security: "seguretat",
+    license: "LLICÈNCIA v3.1",
+    tls: "Certificats importats des d'Integrations",
+    usb: "Protecció amb dongle per a sistemes sense llicència dongleless",
+    backup: "Es restaura des de l'assistent d'inici",
+  },
+  scindoor: {
+    worksWith: "TREBALLA AMB",
+    network: "QUI GESTIONA LA XARXA?",
+    location: "UNA SOLA UBICACIÓ",
+    region: "Europa",
+  },
+  displays: {
+    label: "PANTALLES I DIAGNOSI",
+    line1: "Pantalles",
+    line2: "next-gen",
+    free: "Lliures",
+    tools: "Noves eines",
+  },
+  fixes: {
+    label: "CANVIS I CORRECCIONS",
+    changes: "canvis",
+    bugs: "errors",
+    fixed: "corregits",
+    token: "TOKEN D'ACCÉS A LA URL",
+    loop: "REINICI INFINIT DEL CONTENIDOR",
+    restarting: "Reiniciant…",
+    stops: "S'atura i avisa",
+  },
+  removed: {
+    label: "ES RETIRA",
+    bye: "Adéu",
+    smartrec: "Hikvision és l'únic CCTV compatible",
+    sql: "Vistes SQL",
+    sqlSub: "Les vistes públiques de només lectura",
+    irw: "Llicència IRW",
+    irwSub: "Retirada de les llicències de programari",
+    back: "TORNARÀ REDISSENYAT",
+    next: "en una propera versió",
+  },
+  outro: {
+    lines: [
+      { a: "Més", b: "net." },
+      { a: "més", b: "segur." },
+      { a: "més", b: "fàcil de mantenir." },
+    ],
+  },
+};
+
+const en: typeof ca = {
+  intro: { arrives: "HERE COMES" },
+  versions: { two: "Two", versions: "releases", sept: "15 SEP 2026", oct: "15 OCT 2026" },
+  docker: {
+    label: "DOCKER",
+    line1: "Birdwatch 3",
+    line2: "runs on",
+    install: "INSTALLATION",
+    ram: "RAM",
+    small: "SMALL CAR PARKS",
+    optional: "OPTIONAL",
+  },
+  web: {
+    label: "WEB",
+    size: 100,
+    line1: "The website",
+    line2: "gets a",
+    renew: "refresh",
+    bullets: ["+ cleaner", "+ faster", "+ maintenance built in"],
+  },
+  settings: {
+    label: "SETTINGS",
+    title: "Settings",
+    dynamic: "Dynamic",
+    dynamicSub: "applied instantly",
+    static: "Static",
+    staticSub: "applied after a reboot",
+  },
+  security: {
+    label: "SECURITY",
+    more: "More",
+    security: "security",
+    license: "LICENSE v3.1",
+    tls: "Certificates imported from Integrations",
+    usb: "Dongle protection for systems without a dongleless license",
+    backup: "Restored from the startup wizard",
+  },
+  scindoor: {
+    worksWith: "WORKS WITH",
+    network: "WHO RUNS THE NETWORK?",
+    location: "A SINGLE LOCATION",
+    region: "Europe",
+  },
+  displays: {
+    label: "DISPLAYS AND DIAGNOSIS",
+    line1: "Next-gen",
+    line2: "displays",
+    free: "Free",
+    tools: "New tools",
+  },
+  fixes: {
+    label: "CHANGES AND FIXES",
+    changes: "changes",
+    bugs: "bugs",
+    fixed: "fixed",
+    token: "ACCESS TOKEN IN THE URL",
+    loop: "ENDLESS CONTAINER RESTART",
+    restarting: "Restarting…",
+    stops: "Stops and reports",
+  },
+  removed: {
+    label: "REMOVED",
+    bye: "Goodbye",
+    smartrec: "Hikvision is the only compatible CCTV",
+    sql: "SQL views",
+    sqlSub: "The read-only public views",
+    irw: "IRW license",
+    irwSub: "Dropped from the software licenses",
+    back: "COMING BACK REDESIGNED",
+    next: "in an upcoming release",
+  },
+  outro: {
+    lines: [
+      { a: "", b: "Cleaner." },
+      { a: "", b: "Safer." },
+      { a: "Easier to", b: "maintain." },
+    ],
+  },
+};
+
+const COPY = { ca, en };
+
+export const useCopy = () => COPY[useLang()];

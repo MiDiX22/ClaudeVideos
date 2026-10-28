@@ -3,7 +3,8 @@ import { easeInOut, lerp, overshoot, prog } from "../anim";
 import { BoltIcon, RebootIcon } from "../components/Icons";
 import { Punch, Rise, SectionLabel } from "../components/Kinetic";
 import { colors, fontFamily, success } from "../theme";
-import { useWordFrame } from "../voice";
+import { useCopy } from "../copy";
+import { useCue } from "../voice";
 
 const Toggle: React.FC<{ on: number }> = ({ on }) => (
   <div style={{ width: 120, height: 64, borderRadius: 9999, backgroundColor: on > 0.5 ? success : "rgba(255,255,255,0.35)", position: "relative" }}>
@@ -24,12 +25,13 @@ const Toggle: React.FC<{ on: number }> = ({ on }) => (
 // "Els paràmetres se separen en dos": the frame splits into Dynamic (applied now) and Static (after reboot).
 export const S05Settings: React.FC = () => {
   const frame = useCurrentFrame();
-  const at = useWordFrame("05-settings");
-  const split = prog(frame, at("en") - 2, 20, easeInOut);
-  const tDyn = at("dinàmics");
-  const tStat = at("estàtics");
-  const tReboot = at("reiniciar");
-  const toggles = [0, 1, 2].map((i) => prog(frame, at("l'instant") + i * 4, 4));
+  const at = useCue("05-settings");
+  const t = useCopy().settings;
+  const split = prog(frame, at("split") - 2, 20, easeInOut);
+  const tDyn = at("dynamic");
+  const tStat = at("static");
+  const tReboot = at("reboot");
+  const toggles = [0, 1, 2].map((i) => prog(frame, at("instant") + i * 4, 4));
   const spin = prog(frame, tReboot - 4, 30, easeInOut);
   const applied = prog(frame, tReboot + 24, 8, overshoot);
 
@@ -38,7 +40,7 @@ export const S05Settings: React.FC = () => {
       <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: lerp(0, 960, split), backgroundColor: colors.orange }} />
       <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: lerp(0, 960, split), backgroundColor: colors.grey }} />
       <div style={{ position: "absolute", left: 140, top: 110 }}>
-        <SectionLabel at={0} index="03" text="PARÀMETRES" color={split > 0.5 ? colors.white : colors.grey} accent={split > 0.5 ? colors.ink : colors.orange} />
+        <SectionLabel at={0} index="03" text={t.label} color={split > 0.5 ? colors.white : colors.grey} accent={split > 0.5 ? colors.ink : colors.orange} />
       </div>
       <AbsoluteFill
         style={{
@@ -48,17 +50,17 @@ export const S05Settings: React.FC = () => {
           fontWeight: 800,
           color: colors.ink,
           letterSpacing: "-0.04em",
-          opacity: 1 - prog(frame, at("en"), 8),
-          scale: String(lerp(1, 0.8, prog(frame, at("en"), 12))),
+          opacity: 1 - prog(frame, at("split"), 8),
+          scale: String(lerp(1, 0.8, prog(frame, at("split"), 12))),
         }}
       >
         <div>
-          <Rise at={at("Els")}>Paràmetres</Rise>
+          <Rise at={at("title")}>{t.title}</Rise>
         </div>
       </AbsoluteFill>
       {[
-        { left: 0, t: tDyn, title: "Dinàmics", sub: "s'apliquen a l'instant" },
-        { left: 960, t: tStat, title: "Estàtics", sub: "després de reiniciar" },
+        { left: 0, t: tDyn, title: t.dynamic, sub: t.dynamicSub },
+        { left: 960, t: tStat, title: t.static, sub: t.staticSub },
       ].map((side, i) => (
         <div
           key={i}

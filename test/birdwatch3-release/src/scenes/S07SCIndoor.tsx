@@ -3,7 +3,8 @@ import { easeInOut, lerp, overshoot, prog } from "../anim";
 import { PinIcon } from "../components/Icons";
 import { Punch, Rise, SectionLabel } from "../components/Kinetic";
 import { colors, fontFamily, monoFamily, moduleColors } from "../theme";
-import { useWordFrame } from "../voice";
+import { useCopy } from "../copy";
+import { useCue } from "../voice";
 
 const PLATES = [
   { country: "E", number: "4821 KJT" },
@@ -70,14 +71,15 @@ const Managed: React.FC<{ at: number; name: string; choice: 0 | 1 }> = ({ at, na
 // "SC Indoor passa a l'API cinc punt u": new API, SC Indoor AI docker, DNS/DHCP management and one location for plates.
 export const S07SCIndoor: React.FC = () => {
   const frame = useCurrentFrame();
-  const at = useWordFrame("07-scindoor");
-  const tRoll = at("cinc");
+  const at = useCue("07-scindoor");
+  const t = useCopy().scindoor;
+  const tRoll = at("five");
   const roll = prog(frame, tRoll, 14, easeInOut);
-  const tAi = at("docker");
+  const tAi = at("aiDocker");
   const xpuOut = prog(frame, tAi, 12, easeInOut);
-  const tB = at("Birdwatch") - 8;
+  const tB = at("network") - 8;
   const swap = prog(frame, tB, 20, easeInOut);
-  const tLoc = at("ubicació");
+  const tLoc = at("location");
   const scroll = Math.max(0, frame - tLoc) * 5;
 
   return (
@@ -88,9 +90,9 @@ export const S07SCIndoor: React.FC = () => {
       {/* Part A: API v5.1.0 and the SC Indoor AI docker. */}
       <AbsoluteFill style={{ translate: `0px ${lerp(0, -1080, swap)}px` }}>
         <div style={{ position: "absolute", left: 140, top: 250, fontSize: 210, fontWeight: 800, color: colors.ink, letterSpacing: "-0.05em", lineHeight: 1 }}>
-          <Rise at={at("SC")}>SC</Rise> <Rise at={at("Indoor")} style={{ color: colors.orange }}>Indoor</Rise>
+          <Rise at={at("sc")}>SC</Rise> <Rise at={at("indoor")} style={{ color: colors.orange }}>Indoor</Rise>
         </div>
-        <div style={{ position: "absolute", left: 140, top: 540, display: "flex", alignItems: "center", gap: 30, opacity: prog(frame, at("l'API"), 10) }}>
+        <div style={{ position: "absolute", left: 140, top: 540, display: "flex", alignItems: "center", gap: 30, opacity: prog(frame, at("api"), 10) }}>
           <div style={{ fontSize: 60, fontWeight: 700, color: colors.grey }}>API</div>
           <div style={{ fontSize: 150, fontWeight: 800, color: colors.ink, letterSpacing: "-0.03em", display: "flex" }}>
             v5.
@@ -104,8 +106,8 @@ export const S07SCIndoor: React.FC = () => {
           </div>
         </div>
         <div style={{ position: "absolute", left: 1150, top: 300, display: "flex", flexDirection: "column", gap: 34 }}>
-          <div style={{ fontSize: 30, fontWeight: 700, letterSpacing: "0.2em", color: colors.grey, opacity: prog(frame, at("treballa"), 10) }}>TREBALLA AMB</div>
-          <div style={{ position: "relative", fontSize: 64, fontWeight: 800, color: colors.grey, opacity: prog(frame, at("treballa"), 10) * lerp(1, 0.35, xpuOut) }}>
+          <div style={{ fontSize: 30, fontWeight: 700, letterSpacing: "0.2em", color: colors.grey, opacity: prog(frame, at("works"), 10) }}>{t.worksWith}</div>
+          <div style={{ position: "relative", fontSize: 64, fontWeight: 800, color: colors.grey, opacity: prog(frame, at("works"), 10) * lerp(1, 0.35, xpuOut) }}>
             XPU virtual machine
             <div style={{ position: "absolute", left: 0, top: "52%", height: 8, width: `${xpuOut * 100}%`, backgroundColor: colors.orange }} />
           </div>
@@ -120,11 +122,11 @@ export const S07SCIndoor: React.FC = () => {
               fontSize: 78,
               fontWeight: 800,
               whiteSpace: "nowrap",
-              scale: String(prog(frame, at("SC", 1), 16, overshoot)),
+              scale: String(prog(frame, at("aiChip"), 16, overshoot)),
               transformOrigin: "left center",
             }}
           >
-            SC Indoor <Punch at={at("AI")} style={{ color: colors.orange }}>AI</Punch>
+            SC Indoor <Punch at={at("ai")} style={{ color: colors.orange }}>AI</Punch>
             <span style={{ fontSize: 30, fontWeight: 700, letterSpacing: "0.15em", padding: "6px 14px", border: `3px solid ${colors.white}` }}>DOCKER</span>
           </div>
         </div>
@@ -133,17 +135,17 @@ export const S07SCIndoor: React.FC = () => {
       <AbsoluteFill style={{ translate: `0px ${lerp(1080, 0, swap)}px` }}>
         <div style={{ position: "absolute", left: 140, top: 250, display: "flex", flexDirection: "column", gap: 60 }}>
           <div style={{ fontSize: 34, fontWeight: 700, letterSpacing: "0.2em", color: colors.grey }}>
-            <Rise at={at("gestionar")}>QUI GESTIONA LA XARXA?</Rise>
+            <Rise at={at("manage")}>{t.network}</Rise>
           </div>
-          <Managed at={at("DNS")} name="DNS" choice={0} />
-          <Managed at={at("DHCP")} name="DHCP" choice={1} />
+          <Managed at={at("dns")} name="DNS" choice={0} />
+          <Managed at={at("dhcp")} name="DHCP" choice={1} />
         </div>
         <div style={{ position: "absolute", left: 1240, top: 230, width: 560, height: 720, overflow: "hidden" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 20, opacity: prog(frame, tLoc, 10) }}>
             <PinIcon size={110} color={colors.orange} style={{ translate: `0px ${lerp(-80, 0, prog(frame, tLoc, 14, overshoot))}px` }} />
             <div>
-              <div style={{ fontSize: 28, fontWeight: 700, letterSpacing: "0.2em", color: colors.grey }}>UNA SOLA UBICACIÓ</div>
-              <div style={{ fontSize: 88, fontWeight: 800, color: colors.ink, letterSpacing: "-0.03em", lineHeight: 1.05 }}>Europa</div>
+              <div style={{ fontSize: 28, fontWeight: 700, letterSpacing: "0.2em", color: colors.grey }}>{t.location}</div>
+              <div style={{ fontSize: 88, fontWeight: 800, color: colors.ink, letterSpacing: "-0.03em", lineHeight: 1.05 }}>{t.region}</div>
             </div>
           </div>
           <div

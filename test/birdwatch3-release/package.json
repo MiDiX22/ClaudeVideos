@@ -30,7 +30,7 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "render": "remotion render Birdwatch3 out/birdwatch3-release.mp4"
+    "render": "remotion render Birdwatch3 out/birdwatch3-release.mp4 && remotion render Birdwatch3-EN out/birdwatch3-release-en.mp4"
   },
   "allowScripts": {
     "esbuild": false

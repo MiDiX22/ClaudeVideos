@@ -3,7 +3,8 @@ import { easeInOut, easeOut, lerp, overshoot, prog } from "../anim";
 import { CheckIcon, RebootIcon } from "../components/Icons";
 import { Rise, SectionLabel } from "../components/Kinetic";
 import { colors, fontFamily, monoFamily, success } from "../theme";
-import { useWordFrame } from "../voice";
+import { useCopy } from "../copy";
+import { useCue } from "../voice";
 
 const Counter: React.FC<{ from: number; to: number; value: number; color: string; size: number }> = ({ from, to, value, color, size }) => {
   const frame = useCurrentFrame();
@@ -59,37 +60,38 @@ const Done: React.FC<{ at: number }> = ({ at }) => {
 // "En total, quaranta-set canvis. Setze errors corregits": counters, then two of the fixes shown.
 export const S09Fixes: React.FC = () => {
   const frame = useCurrentFrame();
-  const at = useWordFrame("09-fixes");
-  const tChanges = at("quaranta-set");
-  const tBugs = at("Setze");
+  const at = useCue("09-fixes");
+  const t = useCopy().fixes;
+  const tChanges = at("changes");
+  const tBugs = at("bugs");
   const tToken = at("tokens");
-  const tUrl = at("URL");
+  const tUrl = at("url");
   const hide = prog(frame, tUrl, 14, easeInOut);
-  const tLoop = at("contenidor");
-  const tStop = at("parar");
+  const tLoop = at("container");
+  const tStop = at("stop");
   const spin = interpolate(frame, [tLoop, tStop + 6], [0, 1600], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (t) => 1 - (1 - t) * (1 - t) });
 
   return (
     <AbsoluteFill style={{ backgroundColor: colors.white, fontFamily, overflow: "hidden" }}>
       <div style={{ position: "absolute", left: 140, top: 110 }}>
-        <SectionLabel at={0} index="07" text="CANVIS I CORRECCIONS" color={colors.grey} accent={colors.orange} />
+        <SectionLabel at={0} index="07" text={t.label} color={colors.grey} accent={colors.orange} />
       </div>
       <div style={{ position: "absolute", left: 140, top: 220, display: "flex", alignItems: "flex-end", gap: 34 }}>
-        <Counter from={tChanges - 4} to={at("canvis") + 6} value={47} color={colors.orange} size={300} />
+        <Counter from={tChanges - 4} to={at("changesWord") + 6} value={47} color={colors.orange} size={300} />
         <div style={{ fontSize: 80, fontWeight: 800, color: colors.ink, paddingBottom: 26 }}>
-          <Rise at={at("canvis")}>canvis</Rise>
+          <Rise at={at("changesWord")}>{t.changes}</Rise>
         </div>
       </div>
       <div style={{ position: "absolute", left: 1010, top: 220, display: "flex", alignItems: "flex-end", gap: 30, opacity: prog(frame, tBugs - 2, 6) }}>
-        <Counter from={tBugs - 2} to={at("corregits") + 4} value={16} color={colors.grey} size={300} />
+        <Counter from={tBugs - 2} to={at("fixedWord") + 4} value={16} color={colors.grey} size={300} />
         <div style={{ fontSize: 62, fontWeight: 800, color: colors.ink, lineHeight: 1.05, paddingBottom: 26 }}>
-          <Rise at={at("errors")}>errors</Rise>
+          <Rise at={at("errorsWord")}>{t.bugs}</Rise>
           <br />
-          <Rise at={at("corregits")}>corregits</Rise>
+          <Rise at={at("fixedWord")}>{t.fixed}</Rise>
         </div>
       </div>
       <div style={{ position: "absolute", left: 140, top: 640, display: "flex", gap: 80 }}>
-        <Fixed at={tToken - 6} title="TOKEN D'ACCÉS A LA URL">
+        <Fixed at={tToken - 6} title={t.token}>
           <div style={{ display: "flex", alignItems: "center", gap: 26 }}>
             <div
               style={{
@@ -124,11 +126,11 @@ export const S09Fixes: React.FC = () => {
             <Done at={tUrl + 12} />
           </div>
         </Fixed>
-        <Fixed at={tLoop - 6} title="REINICI INFINIT DEL CONTENIDOR">
+        <Fixed at={tLoop - 6} title={t.loop}>
           <div style={{ display: "flex", alignItems: "center", gap: 34 }}>
             <RebootIcon size={110} color={frame > tStop + 6 ? colors.grey : "#db2828"} style={{ rotate: `${spin}deg` }} />
             <div style={{ flex: 1, fontSize: 40, fontWeight: 700, color: colors.ink }}>
-              {frame > tStop + 6 ? "S'atura i avisa" : "Reiniciant…"}
+              {frame > tStop + 6 ? t.stops : t.restarting}
             </div>
             <Done at={tStop + 8} />
           </div>

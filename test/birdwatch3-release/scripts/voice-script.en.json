@@ -1,0 +1,17 @@
+{
+ "voice": "en-GB-SoniaNeural",
+ "rate": "+6%",
+ "clips": [
+  { "id": "01-intro", "text": "{arrives}Here comes {name}Birdwatch {three}three." },
+  { "id": "02-versions", "text": "{two}Two {versions}releases. {v300}Three point zero, in {alpha}alpha, in {sept}September. And {v301}three point zero point one, in {beta}beta, in {oct}October." },
+  { "id": "03-docker", "text": "{name}Birdwatch three {runs}runs on {docker}Docker. {install}It installs in the {folder}opt quercus folder, you can {limit}limit the {ram}RAM it uses, and {small}small car parks get a {webdav}WebDAV service, {optional}as an option." },
+  { "id": "04-web", "text": "{line1}The website {line2}gets a {renew}refresh. {window}A {cleaner}cleaner interface, system information opens {fast}faster, and it now {includes}includes {maintenance}maintenance." },
+  { "id": "05-settings", "text": "{title}Settings are {split}split in two: {dynamic}dynamic, applied {instant}instantly, and {static}static, applied after a {reboot}reboot." },
+  { "id": "06-security", "text": "{more}More {security}security. {import}Import your own {tls}TLS certificates, {protect}protect the system with a {usb}USB dongle, and {restore}restore {backups}backups from the startup wizard." },
+  { "id": "07-scindoor", "text": "{sc}SC {indoor}Indoor moves to {api}API {five}five point one, and {works}works with the {aiDocker}{aiChip}SC Indoor {ai}AI docker. {network}Birdwatch can {manage}manage {dns}DNS and {dhcp}DHCP, and with a single {location}location, it reads number plates across the whole region." },
+  { "id": "08-displays", "text": "{line1}Next-generation {line2}displays are now {compatible}compatible with {a1}Ampron A one, and there are {newTools}new {tools}diagnosis {diagnosis}tools." },
+  { "id": "09-fixes", "text": "In total, {changes}forty-seven {changesWord}changes. {bugs}Sixteen {errorsWord}bugs {fixedWord}fixed, like {tokens}access tokens showing up in the {url}URL, or the {container}container that kept restarting {stop}endlessly." },
+  { "id": "10-removed", "text": "And we say {bye}goodbye to {smartrec}SmartREC, the {views}SQL {sql}views, and the {license}IRW {irw}license. {find}Find your car {back}will be back, {redesigned}redesigned, in an {next}upcoming release." },
+  { "id": "11-outro", "text": "{name}Birdwatch three. {more1}Cleaner, {more2}safer, and {more3}easier to {maintain}maintain." }
+ ]
+}

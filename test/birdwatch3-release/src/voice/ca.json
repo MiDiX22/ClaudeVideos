@@ -1,8 +1,13 @@
 [
  {
   "id": "01-intro",
-  "file": "voice/01-intro.mp3",
+  "file": "voice/ca/01-intro.mp3",
   "duration": 2.616,
+  "cues": {
+   "arrives": 0.099,
+   "name": 0.667,
+   "three": 1.383
+  },
   "words": [
    {
     "word": "Arriba",
@@ -23,8 +28,18 @@
  },
  {
   "id": "02-versions",
-  "file": "voice/02-versions.mp3",
+  "file": "voice/ca/02-versions.mp3",
   "duration": 11.16,
+  "cues": {
+   "two": 0.099,
+   "versions": 0.599,
+   "v300": 2.333,
+   "alpha": 3.969,
+   "sept": 4.765,
+   "v301": 6.753,
+   "beta": 9.083,
+   "oct": 9.731
+  },
   "words": [
    {
     "word": "Dues",
@@ -130,8 +145,20 @@
  },
  {
   "id": "03-docker",
-  "file": "voice/03-docker.mp3",
+  "file": "voice/ca/03-docker.mp3",
   "duration": 13.032,
+  "cues": {
+   "name": 0.099,
+   "runs": 1.144,
+   "docker": 2.065,
+   "install": 3.231,
+   "folder": 4.106,
+   "limit": 5.958,
+   "ram": 6.935,
+   "small": 8.697,
+   "webdav": 10.594,
+   "optional": 11.651
+  },
   "words": [
    {
     "word": "Birdwatch",
@@ -277,8 +304,18 @@
  },
  {
   "id": "04-web",
-  "file": "voice/04-web.mp3",
+  "file": "voice/ca/04-web.mp3",
   "duration": 9.168,
+  "cues": {
+   "line1": 0.099,
+   "line2": 0.644,
+   "renew": 0.792,
+   "window": 2.174,
+   "cleaner": 3.094,
+   "fast": 6.151,
+   "includes": 7.151,
+   "maintenance": 7.719
+  },
   "words": [
    {
     "word": "La",
@@ -389,8 +426,16 @@
  },
  {
   "id": "05-settings",
-  "file": "voice/05-settings.mp3",
+  "file": "voice/ca/05-settings.mp3",
   "duration": 8.04,
+  "cues": {
+   "title": 0.099,
+   "split": 1.531,
+   "dynamic": 2.19,
+   "instant": 3.701,
+   "static": 4.667,
+   "reboot": 6.667
+  },
   "words": [
    {
     "word": "Els",
@@ -486,8 +531,18 @@
  },
  {
   "id": "06-security",
-  "file": "voice/06-security.mp3",
+  "file": "voice/ca/06-security.mp3",
   "duration": 11.832,
+  "cues": {
+   "more": 0.099,
+   "security": 0.474,
+   "import": 2.106,
+   "tls": 3.753,
+   "protect": 4.753,
+   "usb": 6.765,
+   "restore": 8.026,
+   "backups": 8.651
+  },
   "words": [
    {
     "word": "Més",
@@ -613,8 +668,23 @@
  },
  {
   "id": "07-scindoor",
-  "file": "voice/07-scindoor.mp3",
+  "file": "voice/ca/07-scindoor.mp3",
   "duration": 14.832,
+  "cues": {
+   "sc": 0.099,
+   "indoor": 0.656,
+   "api": 1.599,
+   "five": 1.94,
+   "works": 3.11,
+   "aiDocker": 4.019,
+   "aiChip": 4.474,
+   "ai": 5.349,
+   "network": 6.38,
+   "manage": 7.289,
+   "dns": 7.993,
+   "dhcp": 9.061,
+   "location": 11.107
+  },
   "words": [
    {
     "word": "SC",
@@ -800,8 +870,17 @@
  },
  {
   "id": "08-displays",
-  "file": "voice/08-displays.mp3",
+  "file": "voice/ca/08-displays.mp3",
   "duration": 7.368,
+  "cues": {
+   "line1": 0.394,
+   "line2": 1.053,
+   "compatible": 2.462,
+   "a1": 3.678,
+   "newTools": 5.144,
+   "tools": 5.508,
+   "diagnosis": 5.985
+  },
   "words": [
    {
     "word": "Les",
@@ -907,8 +986,19 @@
  },
  {
   "id": "09-fixes",
-  "file": "voice/09-fixes.mp3",
+  "file": "voice/ca/09-fixes.mp3",
   "duration": 11.232,
+  "cues": {
+   "changes": 1.008,
+   "changesWord": 1.792,
+   "bugs": 3.14,
+   "errorsWord": 3.674,
+   "fixedWord": 4.026,
+   "tokens": 5.162,
+   "url": 6.822,
+   "container": 8.174,
+   "stop": 10.151
+  },
   "words": [
    {
     "word": "En",
@@ -1034,8 +1124,20 @@
  },
  {
   "id": "10-removed",
-  "file": "voice/10-removed.mp3",
+  "file": "voice/ca/10-removed.mp3",
   "duration": 11.832,
+  "cues": {
+   "bye": 0.553,
+   "smartrec": 1.087,
+   "views": 2.951,
+   "sql": 3.349,
+   "license": 4.428,
+   "irw": 5.167,
+   "find": 6.787,
+   "back": 7.81,
+   "redesigned": 8.572,
+   "next": 10.128
+  },
   "words": [
    {
     "word": "I",
@@ -1156,8 +1258,15 @@
  },
  {
   "id": "11-outro",
-  "file": "voice/11-outro.mp3",
+  "file": "voice/ca/11-outro.mp3",
   "duration": 6.024,
+  "cues": {
+   "name": 0.099,
+   "more1": 2.106,
+   "more2": 3.06,
+   "more3": 3.947,
+   "maintain": 4.731
+  },
   "words": [
    {
     "word": "Birdwatch",
